@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Ship Captain: as SC
+(Knows how much the vessel sink) as (Use)
+
+SC -> (Start the app)
+
+SC ---> (Use)
+
+(Start the app) ..  (Use)
+@enduml

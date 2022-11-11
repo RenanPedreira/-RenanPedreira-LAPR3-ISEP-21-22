@@ -1,0 +1,16 @@
+title US106 System Sequence Diagram
+actor "Traffic Manager" as lb #7dcfff
+participant ":System" as System #7dcfff
+
+activate lb #7dcfff
+lb->System:1: Get the top-N ships
+
+activate System #7dcfff
+lb<--System: 2: request data(numberOfShips, initialDate, finalDate)
+deactivate System #7dcfff
+
+lb->System:3: types requested data
+activate System #7dcfff
+
+lb<--System:4: return a list with the top-N ships and their meanSOG and kilometers travelled
+deactivate System #7dcfff

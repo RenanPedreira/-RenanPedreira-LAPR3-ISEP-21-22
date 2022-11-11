@@ -1,0 +1,63 @@
+@startuml
+
+autonumber
+
+activate TrafficManager
+
+TrafficManager -> ":ShortestPathUI" : Starts the proccess of knowing the shortest path between two locals
+
+activate ":ShortestPathUI"
+
+":ShortestPathUI" --> TrafficManager : Asks the Traffic Manager if the path is by land and/or sea
+
+deactivate ":ShortestPathUI"
+
+TrafficManager -> ":ShortestPathUI" : Introduces the option 
+
+activate ":ShortestPathUI"
+
+":ShortestPathUI" --> TrafficManager : Asks the Traffic Manager the name of the departure and arrival places
+
+deactivate ":ShortestPathUI"
+
+TrafficManager -> ":ShortestPathUI" : Inserts the name of the departure and arrival places
+
+activate ":ShortestPathUI"
+
+":ShortestPathUI" -> ":ShortestPathController" : checkIfDepartureExist(departureLocal, matrix)
+
+activate ":ShortestPathController"
+
+":ShortestPathUI" -> ":ShortestPathController" : checkIfArrivalExist(arrivalLocal, matrix)
+
+":ShortestPathUI" -> ":ShortestPathController" : list=getShortestPath(matrix, startLocal, endLocal, result, option, opt2)
+
+":ShortestPathUI" -> ":ShortestPathController" : list=nIndicatedPlaces(initial, end, matrix, numberOfPlaces, listOfPlaces, opt, opt2) {
+
+":ShortestPathController" -> ":ShortestPathController" : orderList(matrix, startLocal, listOfPlaces, numPlaces, result, opt, opt2)
+
+":ShortestPathController" -> ":ShortestPathController" : getCountryByPort(port, matrix)
+  
+":ShortestPathController" -> ":ShortestPathController" : getVertexLocationByString(freightNetwork, places, numberOfPlaces)
+
+":ShortestPathController" -> Algorithms : getAlgorithms()
+
+activate Algorithms
+
+":ShortestPathController" -> Algorithms : shortestPath=shortestPath(g, vOrig, vDest, shortPath, opt, opt2)
+
+Algorithms -> Algorithms : shortestPathLength(g, vOrig, vertices, visited, pathKeys, dist)
+
+Algorithms -> Algorithms : getPath(g, vOrig, vDest, verts, pathKeys, path)
+  
+deactivate Algorithms
+
+":ShortestPathUI" -> ":ShortestPathController" : list=getFinalList()
+  
+deactivate ":ShortestPathController"
+
+":ShortestPathUI" -> TrafficManager : Informs about the operation success
+
+deactivate ":ShortestPathUI"
+
+@enduml

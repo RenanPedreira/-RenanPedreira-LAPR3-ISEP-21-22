@@ -1,0 +1,57 @@
+@startuml
+
+autonumber
+
+activate TrafficManager
+
+TrafficManager -> ":ColourMapUI" : Starts the proccess of coloring the map
+
+activate ":ColourMapUI"
+
+":ColourMapUI" -> ":ColourMapController" : freightNetwork=getFreightNetwork()
+
+activate ":ColourMapController"
+
+":ColourMapController" -> FreightNetwork : getFreightNetwork()
+
+activate FreightNetwork
+
+deactivate FreightNetwork
+
+":ColourMapController" -> CountryStore : getCountryStore()
+
+activate CountryStore
+
+deactivate CountryStore
+
+":ColourMapController" -> Algorithms : getAlgorithms()
+
+activate Algorithms
+
+deactivate Algorithms
+
+":ColourMapUI" -> ":ColourMapController" : array=colorMap(map)
+
+":ColourMapController" -> Algorithms : colorMap(map)
+
+activate Algorithms
+
+Algorithms -> AdjacencyMapGraph : map=new AdjacencyMapGraph()
+
+activate AdjacencyMapGraph
+
+Algorithms -> AdjacencyMapGraph : numVertices(V vert)
+
+Algorithms -> AdjacencyMapGraph : adjVertices(V vert)
+
+deactivate AdjacencyMapGraph
+
+":ColourMapUI" -> ":ColourMapUI" : printFinalArray(array, freightNetwork)
+
+deactivate ":ColourMapController"
+
+":ColourMapUI" -> TrafficManager : Informs about the operation success
+
+deactivate ":ColourMapUI"
+
+@enduml

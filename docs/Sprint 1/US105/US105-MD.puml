@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+}
+
+class ShipDynamicData {
+  -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+}
+
+enum VesselType {
+  Passenger
+  Fishing
+  Tugboat
+}
+
+class Company {
+  -String designation
+}
+
+Company "1" -- "1..*" TrafficManager : has registered >
+Company "1" -- "1..*" Ship : has registered >
+TrafficManager "1" -- "1" Ship : controls the infos of >
+Ship "1..*" -- "1..*" VesselType : has >
+Ship "*" -- "*" ShipDynamicData : has >
+
+@enduml

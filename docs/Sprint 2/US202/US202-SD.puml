@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant ":TrafficManager" as TM
+participant ":FindClosestPortUI" as UI
+participant ":FindClosestPortController" as CONTROLLER
+participant ":ShipStore" as SHIP
+participant ":PortStore" as STORE
+
+activate TM
+TM -> UI : ask to the system the closest port of a ship.
+activate UI
+UI --> TM : ask the CallSign of the ship, and the DateTime
+deactivate UI
+TM -> UI : type the CallSign and the DateTime
+activate UI
+UI->CONTROLLER : port = getClosestPort(callsign, dateTime)
+activate CONTROLLER
+CONTROLLER -> SHIP : ship=getTheShipByCallSign(callsign)
+activate SHIP
+deactivate SHIP
+CONTROLLER -> CONTROLLER : position = ship.getShipDynamicData(dateTime)
+CONTROLLER -> STORE : getClosestPort(position.getLat,position.getLon)
+activate STORE
+deactivate STORE
+
+deactivate CONTROLLER
+UI-->TM : show the details of the closest of the ship.
+deactivate UI
+
+@enduml

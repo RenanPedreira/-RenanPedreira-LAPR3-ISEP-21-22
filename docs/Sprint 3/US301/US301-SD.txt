@@ -1,0 +1,51 @@
+title US301 Sequence Diagram
+actor "Traffic Manager" as tm #7dcfff
+participant ":CreateFreightNetworkUI" as ui #7dcfff
+participant ":CreateFreightNetworkController" as ct #7dcfff
+participant ":Company" as c #7dcfff
+participant ":FreightNetwork" as fn #7dcfff
+
+
+
+tm->ui: 1: create a freight network
+activate ui #7dcfff
+ui-->tm: 2: request data(n closest ports)
+deactivateafter ui
+
+tm->ui: 3: types requested data
+activate ui #7dcfff
+
+ui->ct: 4: createFreightNetwork(n)
+activate ct #7dcfff
+
+ct->c: 5: getFreightNetwork()
+activate c #7dcfff
+deactivateafter c
+
+ct->fn: 6: saveCountry()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 7: savePort()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 8: saveSeadists()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 9: saveBorder()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 10: connectPortsSameCountry()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 11: connectClosestPortToCapital()
+activate fn #7dcfff
+deactivateafter fn
+
+ct->fn: 12: connectPortsWithNClosestPorts()
+activate fn #7dcfff
+deactivateafter fn

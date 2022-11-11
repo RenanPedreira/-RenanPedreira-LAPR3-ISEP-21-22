@@ -1,0 +1,27 @@
+@startuml
+
+autonumber 1.0
+
+activate ShipCaptain
+
+ShipCaptain -> System: Starts the process of positioning containers on the vessel, such that the center of mass remains at xx and yy
+
+activate System
+
+System --> ShipCaptain: Asks the Ship Captain how many containers does he want to position
+
+deactivate System
+
+autonumber 2.0
+
+ShipCaptain -> System: Inserts how many container he wants to position
+
+activate System
+
+System --> ShipCaptain: Informs the Ship Captain about the success of the operation
+
+deactivate System
+
+deactivate ShipCaptain
+ 
+@enduml

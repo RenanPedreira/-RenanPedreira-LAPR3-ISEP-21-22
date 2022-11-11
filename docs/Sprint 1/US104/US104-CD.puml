@@ -1,0 +1,64 @@
+@startuml
+
+class MakeSummaryUI {
+
+}
+
+class MakeSummaryController {
+  +List<Ship> getShipsList()
+  +getShipByMMSI(mmsi)
+  +getShipByIMO(imo)
+  +getShipByCallSign(callSign)
+  +searchShipByMMSI(mmsi)
+  +searchShipByIMO(imo)
+  +searchShipByCallSign(callSign)
+  +calculateDistance(lat1, lon1, lat2, lon2)
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class ShipStore {
+  +Ship getShipByMMSI(mmsi)
+  +Ship getShipByIMO(imo)
+  +Ship getShipByCallSign(callSign)
+}  
+
+class ShipDynamicData {
+    -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -String type
+    -Double length
+    -Double width
+    -Double draft
+    +List<Ship>getShips()
+}
+
+class Company {
+  -String designation
+  +getShipStore()
+}
+
+MakeSummaryUI ..> MakeSummaryController
+MakeSummaryController ..> Company
+Company ..> ShipStore
+ShipStore ..> Ship
+TrafficManager "1" -- "1" Ship : controls the position of >
+Ship "*" -- "*" ShipDynamicData : has >
+
+@enduml

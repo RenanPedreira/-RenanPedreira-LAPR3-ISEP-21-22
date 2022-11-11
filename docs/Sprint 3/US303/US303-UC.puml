@@ -1,0 +1,6 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+TrafficManager -> (US303 - Know which place are closest to all other places, closeness places.)
+
+@enduml

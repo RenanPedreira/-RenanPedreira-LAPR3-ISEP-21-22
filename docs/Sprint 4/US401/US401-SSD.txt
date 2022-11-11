@@ -1,0 +1,16 @@
+title US401 System Sequence Diagram
+actor "Traffic Manager" as lb #7dcfff
+participant ":System" as System #7dcfff
+
+activate lb #7dcfff
+lb->System: 1: get the n most critical ports
+
+activate System #7dcfff
+lb<--System: 2: request data(number of critical ports)
+deactivate System #7dcfff
+
+lb->System: 3: types requested data
+activate System #7dcfff
+
+lb<--System:4: shows the n most critical ports
+deactivate System #7dcfff

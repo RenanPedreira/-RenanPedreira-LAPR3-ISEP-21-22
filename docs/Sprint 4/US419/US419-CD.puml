@@ -1,0 +1,30 @@
+@startuml
+
+class PositionContainersUI {
+  
+}
+
+class PositionContainersController {
+  +getContainers(mmsi, cargoManifest)
+  +getMatrixWithContainersPositioned(list, numberOfContainers)
+}
+
+class ShipCaptain {
+  -String name
+  -String email
+}
+
+class PositionContainersDB {
+  +getContainers(mmsi, cargoManifest)
+} 
+
+class Company {
+  -String designation
+} 
+
+PositionContainersUI ..> PositionContainersController
+PositionContainersController ..> Company
+PositionContainersController ..> PositionContainersDB
+Company "1" -- "*" ShipCaptain : has registered >
+
+@enduml

@@ -1,0 +1,16 @@
+title US417 System Sequence Diagram
+actor "Ship Captain" as lb #7dcfff
+participant ":System" as System #7dcfff
+
+activate lb #7dcfff
+lb->System: 1: get the 3 better suited vessel types for a task
+
+activate System #7dcfff
+lb<--System: 2: request data(cargo manifest)
+deactivate System #7dcfff
+
+lb->System: 3: types requested data
+activate System #7dcfff
+
+lb<--System:4: shows the 3 most suited vessel types
+deactivate System #7dcfff

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+activate TrafficManager
+
+ TrafficManager ->  System:  Ask the system to positional messages
+ activate System
+
+ System --> TrafficManager: ask the date
+ deactivate System
+ TrafficManager ->  System:  Put the date/period
+ activate System
+ System --> TrafficManager:  Organize the positional messages by time and associated by each ship
+deactivate System
+@enduml

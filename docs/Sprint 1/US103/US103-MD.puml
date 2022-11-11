@@ -1,0 +1,51 @@
+@startuml
+'Created by Danilton 1191240
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+}
+class TrafficManager{
+  -String name
+  -String email
+}
+
+class Company {
+  -String designation
+}
+
+class ShipDynamicData {
+    -Date dateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Integer heading
+    -Integer trailerId
+    -String transceiver
+}
+
+class PositionalMessage {
+   -Integer mmsi
+   -ShipDynamicData actualPosition
+   +void organizeListMessage()
+   +List getMessagesByShipCode(code)
+   +List getAllMessages()
+}
+
+Company "1" -- "1..*" TrafficManager : has registered >
+Company "1" -- "1..*" Ship : has registered >
+Company "1" -- "1..*" PositionalMessage : has registered >
+Ship "1" -- "1..*" ShipDynamicData : has >
+TrafficManager "1..*" -- "0..*" PositionalMessage : control the >
+PositionalMessage "1..*" -- "1" Ship : of the >
+
+
+
+@enduml

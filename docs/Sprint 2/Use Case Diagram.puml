@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Traffic Manager: as TM
+:Ship Captain: as SC
+:Client: as C
+:Port Manager: as PM
+
+
+TM -> (US202 - Find the closest port of a ship)
+PM -> (US201 - Import ports from a text file and create a 2D-tree with port locations)
+
+
+@enduml

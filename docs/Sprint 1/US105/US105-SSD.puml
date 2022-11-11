@@ -1,0 +1,13 @@
+@startuml
+'Created by Danilton Lopes
+
+autonumber
+activate TrafficManager
+
+ TrafficManager ->  System:  Ask the system to see the MMSI, the total number of movements, Travelled Distance and Delta Distance of each ship organized by Travelled Distance and total number of movements
+ activate System
+
+ System --> TrafficManager:  Organize the info asked according Travelled Distance and total number of movements
+deactivate System
+
+@enduml

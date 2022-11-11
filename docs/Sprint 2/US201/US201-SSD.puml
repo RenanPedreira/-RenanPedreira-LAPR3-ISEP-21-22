@@ -1,0 +1,23 @@
+@startuml
+
+activate PortManager
+
+PortManager -> System: **1:** Starts the process of importing ports from a text file
+
+activate System
+
+System --> PortManager: **1.1:** Requests necessary data
+
+deactivate System
+
+PortManager -> System: **2:** Inserts requested data
+
+activate System
+
+System --> PortManager: **2.1:** Informs the Port Manager about the operation success
+
+deactivate System
+
+deactivate PortManager
+ 
+@enduml

@@ -1,0 +1,62 @@
+title US401 Sequence Diagram
+actor "Traffic Manager" as tm #7dcfff
+participant ":GetCriticalPortsUI" as ui #7dcfff
+participant ":GetCriticalPortsController" as ct #7dcfff
+participant ":Company" as c #7dcfff
+participant ":FreightNetwork" as fn #7dcfff
+
+
+
+tm->ui: 1: get the n most critical ports
+activate ui #7dcfff
+ui-->tm: 2: request data(number of critical ports)
+deactivateafter ui
+
+tm->ui: 3: types requested data
+activate ui #7dcfff
+
+ui->ct: 4: getCriticalPorts(n)
+activate ct #7dcfff
+
+ct->c: 5: getFreightNetwork()
+activate c #7dcfff
+deactivateafter c
+
+ct->fn: 6: getNCriticalPorts(n)
+activate fn #7dcfff
+
+
+deactivateafter ct
+deactivateafter ui
+
+loop Gets the  shortest paths
+
+fn->fn: 7: shortestPathLength()
+activate fn #7dcfff
+deactivateafter fn 
+end
+
+loop Gets each port count
+fn->fn: 8: portCount.add(Pair<Port, Count>)
+activate fn #7dcfff
+deactivateafter fn
+end
+
+fn->fn: 9: portCount.sort
+activate fn #7dcfff
+deactivateafter fn
+
+fn->fn: 10: portCount.sublist(n)
+activate fn #7dcfff
+deactivateafter fn
+
+fn-->ct: 11: portCount
+activate ct #7dcfff
+deactivateafter fn
+
+ct-->ui: 12: portCount
+activate ui #7dcfff
+deactivateafter ct
+
+ui-->tm: 13: shows the n most critical ports
+deactivateafter ui

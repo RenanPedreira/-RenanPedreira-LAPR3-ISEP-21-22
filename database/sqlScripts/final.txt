@@ -1,0 +1,228 @@
+--Drop Tables
+drop table VesselType                   cascade constraints purge;
+drop table Cliente                      cascade constraints purge;
+drop table FleetManager                 cascade constraints purge;
+drop table TrafficManager               cascade constraints purge;
+drop table WarehouseManager             cascade constraints purge;
+drop table PortManager                  cascade constraints purge;
+drop table ShipCaptain                  cascade constraints purge;
+drop table ShipChiefElectricalEngineer  cascade constraints purge;
+drop table TruckDriver                  cascade constraints purge;
+
+drop table Ship                         cascade constraints purge;
+drop table Truck                        cascade constraints purge;
+drop table ShipDynamicData              cascade constraints purge;
+drop table CargoManifest                cascade constraints purge;
+drop table Containerr                  	cascade constraints purge;
+drop table Porte                        cascade constraints purge;
+drop table Warehouse                    cascade constraints purge;
+drop table Locatione                    cascade constraints purge;
+
+drop table PortStaff                    cascade constraints purge;
+drop table WarehouseStaff               cascade constraints purge;
+
+drop table ShipCargoManifest            cascade constraints purge;
+drop table TruckCargoManifest           cascade constraints purge;
+
+
+--Create Tables
+
+create table VesselType(
+    vesselTypeCode      varchar(20)     constraint pkVesselTypeID primary key
+);
+
+create table Cliente(
+    clientID            varchar(20)     constraint pkClientID primary key
+);
+
+create table FleetManager(
+    fleetManagerID      varchar(20)     constraint pkFleetManagerID primary key
+);
+
+create table TrafficManager(
+    trafficManagerID    varchar(20)     constraint pkTrafficManagerID primary key
+);
+
+create table WarehouseManager(
+    warehouseManagerID  varchar(20)     constraint pkWarehouseManagerID primary key
+);
+
+create table PortManager(
+    portManagerID       varchar(20)     constraint pkPortManagerID primary key
+);
+
+create table ShipCaptain(
+    shipCaptainID       varchar(20)     constraint pkShipCaptainID primary key
+);
+
+create table ShipChiefElectricalEngineer(
+    shipChiefID         varchar(20)     constraint pkShipChiefID primary key
+);
+
+create table TruckDriver(
+    truckDriverID       varchar(20)     constraint pkTruckDriverID primary key
+);
+
+
+create table Ship (
+    shipMMSI                            number(9,0)     constraint pkShipShipMMSI primary key,
+    shipIMO                             varchar(10)    	constraint cShipShipIMO unique not null,
+    shipCallSign                        varchar(20)     constraint cShipShipCallSign unique not null,
+    shipName                            varchar(50)     constraint cShipShipName not null,
+    shipEnergyGeneratorNumber           int             constraint cShipShipEnergyGeneratorNumber not null,
+    shipGeneratorPowerOutput            int             constraint cShipShipGeneratorPowerOutput not null,
+    shipLength                          numeric(5,2)    constraint cShipShipLength not null,
+    shipWidth                           numeric(5,2)    constraint cShipShipWidth not null,
+    shipCapacity                        numeric(5,2)    constraint cShipShipCapacity not null,
+    shipDraft                           numeric(5,2)    constraint cShipShipDraft not null,
+    vesselTypeCode                      varchar(20),
+    fleetManagerID                      varchar(20),
+    shipCaptainID                       varchar(20),
+    shipChiefID                         varchar(20)
+);
+
+create table Truck ( 
+    truckID                             varchar(20)         constraint pkTruckTruckID primary key,
+    truckDriverID                       varchar(20)
+);
+
+create table ShipDynamicData (
+    baseDateTime                        timestamp,
+    shipID                              int,    
+    shipLatitude                        numeric(7,5)    constraint ckShipDynamicDataShipLatitude check (shipLatitude between -90 and 90),
+    shipLongitude                       numeric(8,5)    constraint ckShipDynamicDataShipLongitude check (shipLongitude between -180 and 180),
+    shipSOG                             numeric(8,5)    constraint cShipDynamicDataShipSOG not null,
+    shipCOG                             numeric(8,5)    constraint cShipDynamicDataShipCOG check (shipCOG between 0 and 359),
+    shipHeading                         numeric(8,5)    constraint ckShipDynamicDataShipHeading check (shipHeading between 0 and 359 or shipHeading=511),
+    shipPosition                        int             constraint cShipDynamicDataShipPosition not null,
+    shipTransceiverClass                varchar(20)     constraint cShipDynamicDataShipTransceiverClass not null,
+    trafficManagerID                    varchar(20),
+    constraint pkShipDynamicData        primary key (baseDateTime, shipID)
+);
+
+create table Containerr(
+    containerID                         varchar(20)     constraint pkContainerContainerID primary key,
+    containerPayload                    int             constraint cContainerContainerPayload not null,
+    containerTare                       int             constraint cContainerContainerTare not null,
+    containerGross                      int             constraint cContainerContainerGross not null,
+    containerISOCode                    varchar(4)      constraint cContainerContainerISOcode not null,
+    refrigerated                        number(1)	    constraint ckContainerRefrigerated check (refrigerated in (1, 0)),
+    temperature                         int
+);
+
+create table CargoManifest(
+    arrivalDate                         timestamp,
+    containerID				varchar(20),
+    containerPositionX                  int             constraint cCargoManifestContainerPositionX not null,
+    containerPositionY                  int             constraint cCargoManifestContainerPositionY not null,
+    containerPositionZ                  int             constraint cCargoManifestContainerPositionZ not null,
+    constraint pkCargoManifest          primary key (arrivalDate, containerID) 
+);
+
+create table Porte(
+    portID                              varchar(20)     constraint pkPortPortID primary key,
+    portName                            varchar(30)     constraint cPortPortName not null,
+    portContinent                       varchar(10)     constraint cPortPortContinent not null,
+    portCountry                         varchar(20)     constraint cPortPortCountry not null,
+    portLatitude                        numeric(7,5)    constraint ckPortPortLatitude check (portLatitude between -90 and 90),
+    portLongitude                       numeric(8,5)    constraint ckPortPortLongitude check (portLongitude between -180 and 180),
+    portManagerID                       varchar(20)
+);
+
+create table Warehouse(
+    warehouseID                         varchar(20)     constraint pkWarehouseWarehouseID primary key,
+    warehouseName                       varchar(30)     constraint cWarehouseWarehousename not null,
+    warehouseContinent                  varchar(10)     constraint cWarehouseWarehouseContinent not null,
+    warehouseCountry                    varchar(20)     constraint cWarehouseWarehouseCountry not null,
+    warehouseLatitude                   numeric(7,5)    constraint ckWarehouseWarehouseLatitude check (warehouseLatitude between -90 and 90),
+    warehouseLongitude                  numeric(8,5)    constraint ckWarehouseWarehouseLongitude check (warehouseLongitude between -180 and 180),
+    warehousemanagerID                  varchar(20),          
+    portID                              varchar(20)
+);  
+
+create table Locatione(
+    locationID                          varchar(20)     constraint pkLocationeLocationID primary key,
+    locationName                        varchar(30)     constraint cLocationeLocationName not null,
+    locationContinent                   varchar(10)     constraint cLocationeLocationContinent not null,
+    locationCountry                     varchar(20)     constraint cLocationeLocationCountry not null,
+    locationLatitude                    numeric(7,5)    constraint ckLocationeLocationLatitude check (locationLatitude between -90 and 90),
+    locationLongitude                   numeric(8,5)    constraint ckLocationeLocationLongitude check (locationLongitude between -180 and 180)
+);
+
+create table PortStaff(
+    portStaffID                         varchar(20)         constraint pkPortStaffPortStaffID primary key,
+    portID                              varchar(20)   
+);
+
+create table WarehouseStaff(
+    warehouseStaffID                    varchar(20)         constraint pkWarehouseStaffWarehouseStaffID primary key,
+    warehouseID                         varchar(20)
+);
+
+create table ShipCargoManifest (
+    arrivalDate                         timestamp,
+    containerID                         varchar(20),
+    shipMMSI                            number(9,0),
+    portID                              varchar(20),
+    constraint pkShipCargoManifest      primary key(arrivalDate, shipMMSI, portID, containerID) 
+);
+
+create table TruckCargoManifest (
+    arrivalDate                         timestamp,
+    containerID                         varchar(10),
+    truckID                             varchar(10),  
+    constraint pkTruckCargoManifest     primary key(arrivalDate, truckID, containerID)
+);
+
+--ALTER TABLE 
+
+--Ship
+alter table Ship add constraint fkShipVesselTypeID   foreign key (vesselTypeCode)  references VesselType(vesselTypeCode);
+alter table Ship add constraint fkShipFleetManagerID foreign key (fleetManagerID)references FleetManager(fleetManagerID);
+alter table Ship add constraint fkShipShipCaptainID  foreign key (shipCaptainID) references ShipCaptain(shipCaptainID);
+alter table Ship add constraint fkShipShipChiefID    foreign key (shipChiefID)   references ShipChiefElectricalEngineer(shipChiefID);
+
+
+--Truck 
+alter table Truck add constraint fkTruckTruckDriverID  foreign key (truckDriverID)  references TruckDriver(truckDriverID);
+
+
+--ShipDynamicData
+alter table ShipDynamicData add constraint fkShipPositioningShipID foreign key (shipID) references Ship(shipMMSI);
+alter table ShipDynamicData add constraint fkShipPositioningTrafficManagerID foreign key (trafficManagerID) references TrafficManager(trafficManagerID);
+
+
+--CargoManifest
+alter table CargoManifest add constraint fkCargoManifestcontainerID foreign key (containerID) references Containerr(containerID); 
+
+
+--Porte
+alter table Porte add constraint fkPortPortManagerID foreign key (portManagerID) references PortManager(portManagerID);
+
+
+--Warehouse
+alter table Warehouse add constraint fkWarehouseWarehousemanagerID foreign key (warehousemanagerID) references WarehouseManager(warehousemanagerID);
+alter table Warehouse add constraint fkWarehousePortID foreign key (portID) references Porte(portID);
+
+
+--PortStaff
+alter table PortStaff add constraint fkPortStaffPortID foreign key (portID) references Porte(portID);
+
+
+--WarehouseStaff
+alter table WarehouseStaff add constraint fkWarehouseStaffWarehouseID  foreign key (warehouseID) references Warehouse(warehouseID);
+
+
+--ShipCargoManifest
+alter table ShipCargoManifest add constraint fkShipCargoManifestArrivalDateContainerID foreign key (arrivalDate, containerID) references CargoManifest(arrivalDate, containerID);
+alter table ShipCargoManifest add constraint fkShipCargoManifestShipID foreign key (shipMMSI) references Ship(shipMMSI);
+alter table ShipCargoManifest add constraint fkShipCargoManifestPortID foreign key (portID) references Porte(portID);
+
+
+--TruckCargoManifest
+alter table TruckCargoManifest add constraint fkTruckCargoManifestArrivalDateContainerID     foreign key (arrivalDate, containerID) references CargoManifest(arrivalDate, containerID);
+alter table TruckCargoManifest add constraint fkTruckCargoManifestTruckID   foreign key (truckID) references Truck(truckID);
+
+/* Restrictions
+    - Table Containerr: if refrigerated = 0 temperature is null
+*/

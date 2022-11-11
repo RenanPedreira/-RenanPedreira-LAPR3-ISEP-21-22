@@ -1,0 +1,35 @@
+@startuml
+
+autonumber
+
+activate ShipCaptain
+
+ShipCaptain -> ":PositionContainersUI" : Starts the process of positioning containers on the vessel, such that the center of mass remains at xx and yy
+
+activate ":PositionContainersUI"
+
+":PositionContainersUI" --> ShipCaptain : Asks the Ship Captain how many containers does he want to position
+
+deactivate ":PositionContainersUI"
+
+ShipCaptain -> ":PositionContainersUI" : Introduces how many containers he wants to position
+
+activate ":PositionContainersUI"
+
+":PositionContainersUI" -> ":PositionContainersController" : list=getContainers(mmsi, cargoManifest)
+
+activate ":PositionContainersController"
+
+":PositionContainersController" -> "PositionContainersDB" : getContainers(mmsi, cargoManifest)
+
+activate "PositionContainersDB"
+
+deactivate "PositionContainersDB"
+
+":PositionContainersUI" -> ":PositionContainersController" : matrix=getMatrixWithContainersPositioned(list, numberOfContainers)
+
+deactivate ":PositionContainersController"
+
+":PositionContainersUI" --> ShipCaptain : Informs the Ship Captain about the success of the operation
+
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+
+class ColourMapUI {
+  
+}
+
+class ColourMapController {
+  +getFreightNetwork()
+  +getCountryStore()
+  +getAlgorithms()
+  +colorMap(AdjacencyMapGraph<VertexLocation, Double> map2)
+}
+
+class Algorithms {
+  +coloringMap(AdjacencyMapGraph<VertexLocation, Double> map2) 
+  +checkIfAdjVertsHaveTheColor(int num, VertexLocation vertexLocation, AdjacencyMapGraph<VertexLocation, Double> map)
+}
+
+class FreightNetwork {
+  +getFreightNetwork()
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class AdjacencyMapGraph {
+  +new AdjacencyMapGraph()
+  +numVertices(V vert)
+  +adjVertices(V vert)
+}
+
+class Company {
+  -String designation
+}
+  
+ColourMapUI ..> ColourMapController
+ColourMapController ..> FreightNetwork
+ColourMapController ..> AdjacencyMapGraph
+ColourMapController ..> Company
+ColourMapController ..> Algorithms
+Company "1" -- "*" TrafficManager : has registered >
+
+@enduml

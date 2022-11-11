@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="292px" preserveAspectRatio="none" style="width:482px;height:292px;background:#FFFFFF;" version="1.1" viewBox="0 0 482 292" width="482px" zoomAndPan="magnify"><defs><filter height="300%" id="fot3ntjdem2vz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ddaf6f62b0bc30921877ec9fb9463c9f]
+class TrafficManager--><rect codeLine="3" fill="#FEFECE" filter="url(#fot3ntjdem2vz)" height="75.6719" id="TrafficManager" style="stroke:#A80036;stroke-width:1.5;" width="113" x="7" y="174.5"/><ellipse cx="22" cy="190.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24,187 Q24.2031,186.5 24.4375,186.25 Q24.6719,186 24.9375,186 Q25.4063,186 25.7031,186.2813 Q26,186.5625 26,187.2188 L26,188.7813 Q26,189.4375 25.7188,189.7188 Q25.4375,190 25,190 Q24.6094,190 24.3594,189.8281 Q24.1094,189.6563 24,189.2031 Q23.9531,188.8906 23.7813,188.7188 Q23.4688,188.3906 22.9063,188.2031 Q22.3438,188 21.7813,188 Q21.0781,188 20.4844,188.2813 Q19.9063,188.5625 19.4531,189.1875 Q19,189.8125 19,190.6719 L19,191.5938 Q19,192.625 19.8438,193.3125 Q20.6875,194 22.1875,194 Q23.0781,194 23.7031,193.7969 Q24.0625,193.6875 24.4688,193.3281 Q24.7344,193.125 24.875,193.0625 Q25.0156,193 25.1875,193 Q25.5156,193 25.75,193.2656 Q26,193.5156 26,193.875 Q26,194.2188 25.6563,194.625 Q25.1563,195.2188 24.3594,195.5469 Q23.3125,196 22.0313,196 Q20.5313,196 19.3281,195.4063 Q18.3594,194.9375 17.6719,193.9219 Q17,192.9063 17,191.7031 L17,190.6094 Q17,189.3594 17.5938,188.2656 Q18.2031,187.1719 19.25,186.5938 Q20.3125,186 21.5,186 Q22.2188,186 22.8438,186.25 Q23.4688,186.5 24,187 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="36" y="195.4102">TrafficManager</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="119" y1="206.5" y2="206.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="214.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="27" y="221.9189">String name</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="228.3359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="235.7549">String email</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="119" y1="242.1719" y2="242.1719"/><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="7" fill="#FEFECE" filter="url(#fot3ntjdem2vz)" height="61.8359" id="Company" style="stroke:#A80036;stroke-width:1.5;" width="112" x="178.5" y="7"/><ellipse cx="205.65" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M207.65,19.5 Q207.8531,19 208.0875,18.75 Q208.3219,18.5 208.5875,18.5 Q209.0563,18.5 209.3531,18.7813 Q209.65,19.0625 209.65,19.7188 L209.65,21.2813 Q209.65,21.9375 209.3688,22.2188 Q209.0875,22.5 208.65,22.5 Q208.2594,22.5 208.0094,22.3281 Q207.7594,22.1563 207.65,21.7031 Q207.6031,21.3906 207.4313,21.2188 Q207.1188,20.8906 206.5563,20.7031 Q205.9938,20.5 205.4313,20.5 Q204.7281,20.5 204.1344,20.7813 Q203.5563,21.0625 203.1031,21.6875 Q202.65,22.3125 202.65,23.1719 L202.65,24.0938 Q202.65,25.125 203.4938,25.8125 Q204.3375,26.5 205.8375,26.5 Q206.7281,26.5 207.3531,26.2969 Q207.7125,26.1875 208.1188,25.8281 Q208.3844,25.625 208.525,25.5625 Q208.6656,25.5 208.8375,25.5 Q209.1656,25.5 209.4,25.7656 Q209.65,26.0156 209.65,26.375 Q209.65,26.7188 209.3063,27.125 Q208.8063,27.7188 208.0094,28.0469 Q206.9625,28.5 205.6813,28.5 Q204.1813,28.5 202.9781,27.9063 Q202.0094,27.4375 201.3219,26.4219 Q200.65,25.4063 200.65,24.2031 L200.65,23.1094 Q200.65,21.8594 201.2438,20.7656 Q201.8531,19.6719 202.9,19.0938 Q203.9625,18.5 205.15,18.5 Q205.8688,18.5 206.4938,18.75 Q207.1188,19 207.65,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="222.35" y="27.9102">Company</text><line style="stroke:#A80036;stroke-width:1.5;" x1="179.5" x2="289.5" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="186.5" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="198.5" y="54.4189">String designation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="179.5" x2="289.5" y1="60.8359" y2="60.8359"/><!--MD5=[84f5ada19ffcd6d827cbcfc47628b537]
+class VertexLocation--><rect codeLine="11" fill="#FEFECE" filter="url(#fot3ntjdem2vz)" height="131.0156" id="VertexLocation" style="stroke:#A80036;stroke-width:1.5;" width="121" x="347" y="147"/><ellipse cx="366.05" cy="163" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M368.05,159.5 Q368.2531,159 368.4875,158.75 Q368.7219,158.5 368.9875,158.5 Q369.4563,158.5 369.7531,158.7813 Q370.05,159.0625 370.05,159.7188 L370.05,161.2813 Q370.05,161.9375 369.7688,162.2188 Q369.4875,162.5 369.05,162.5 Q368.6594,162.5 368.4094,162.3281 Q368.1594,162.1563 368.05,161.7031 Q368.0031,161.3906 367.8313,161.2188 Q367.5188,160.8906 366.9563,160.7031 Q366.3938,160.5 365.8313,160.5 Q365.1281,160.5 364.5344,160.7813 Q363.9563,161.0625 363.5031,161.6875 Q363.05,162.3125 363.05,163.1719 L363.05,164.0938 Q363.05,165.125 363.8938,165.8125 Q364.7375,166.5 366.2375,166.5 Q367.1281,166.5 367.7531,166.2969 Q368.1125,166.1875 368.5188,165.8281 Q368.7844,165.625 368.925,165.5625 Q369.0656,165.5 369.2375,165.5 Q369.5656,165.5 369.8,165.7656 Q370.05,166.0156 370.05,166.375 Q370.05,166.7188 369.7063,167.125 Q369.2063,167.7188 368.4094,168.0469 Q367.3625,168.5 366.0813,168.5 Q364.5813,168.5 363.3781,167.9063 Q362.4094,167.4375 361.7219,166.4219 Q361.05,165.4063 361.05,164.2031 L361.05,163.1094 Q361.05,161.8594 361.6438,160.7656 Q362.2531,159.6719 363.3,159.0938 Q364.3625,158.5 365.55,158.5 Q366.2688,158.5 366.8938,158.75 Q367.5188,159 368.05,159.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="380.95" y="167.9102">VertexLocation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="348" x2="467" y1="179" y2="179"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="187"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="367" y="194.4189">String locationID</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="200.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="367" y="208.2549">String locationName</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="214.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="367" y="222.0908">String continent</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="228.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="367" y="235.9268">String countryName</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="242.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="367" y="249.7627">Double latitude</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="256.1797"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="367" y="263.5986">Double longitude</text><line style="stroke:#A80036;stroke-width:1.5;" x1="348" x2="467" y1="270.0156" y2="270.0156"/><!--MD5=[683ea96df93176af8455607a7c1d2a32]
+link Company to TrafficManager--><path codeLine="21" d="M204.71,69.05 C176.85,97.15 135.01,139.36 104.1,170.54 " fill="none" id="Company-to-TrafficManager" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="100.39,174.29,109.5608,170.6988,103.904,170.7331,103.8698,165.0764,100.39,174.29" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="175.9799,111.7267,184.435,107.3721,180.2607,103.234,175.9799,111.7267" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="188.5" y="113.4951">has registered</text><!--MD5=[78cc3be9642b70560e42e444cc91fdfc]
+link Company to VertexLocation--><path codeLine="22" d="M264.63,69.05 C286.31,90.66 316.36,120.62 343.31,147.49 " fill="none" id="Company-to-VertexLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="346.92,151.09,343.3659,141.9048,343.3773,147.5616,337.7205,147.573,346.92,151.09" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="319.0409,111.7059,314.7103,103.2385,310.5604,107.4012,319.0409,111.7059" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="324.5" y="113.4951">has registered</text><!--MD5=[394737a38e79ac14162584accbbc91c9]
+link TrafficManager to VertexLocation--><path codeLine="24" d="M120.3,212.5 C181.09,212.5 277.41,212.5 341.52,212.5 " fill="none" id="TrafficManager-to-VertexLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="346.84,212.5,337.84,208.5,341.84,212.5,337.84,216.5,346.84,212.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="138.5" y="172.9951">wants to find the most efficiency</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="147.5" y="189.3467">circuit that has more location</text><polygon fill="#000000" points="160,200.3789,150.9549,197.44,150.9549,203.3178,160,200.3789" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="163" y="205.6982">and shortest total distance</text><!--MD5=[efc116906345588be3f95745dc36b144]
+@startuml
+'https://plantuml.com/class-diagram
+
+class TrafficManager{
+    -String name
+    -String email
+}
+class Company{
+    -String designation
+}
+
+class VertexLocation{
+    -String locationID
+    -String locationName
+    -String continent
+    -String countryName
+    -Double latitude
+    -Double longitude
+}
+
+
+Company - -> TrafficManager : has registered >
+Company - -> VertexLocation : has registered >
+
+TrafficManager -> VertexLocation : wants to find the most efficiency \ncircuit that has more location \nand shortest total distance >
+
+@enduml
+
+@startuml
+
+class TrafficManager{
+    -String name
+    -String email
+}
+class Company{
+    -String designation
+}
+
+class VertexLocation{
+    -String locationID
+    -String locationName
+    -String continent
+    -String countryName
+    -Double latitude
+    -Double longitude
+}
+
+
+Company - -> TrafficManager : has registered >
+Company - -> VertexLocation : has registered >
+
+TrafficManager -> VertexLocation : wants to find the most efficiency \ncircuit that has more location \nand shortest total distance >
+
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

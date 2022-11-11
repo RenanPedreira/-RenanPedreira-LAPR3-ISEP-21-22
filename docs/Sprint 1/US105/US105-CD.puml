@@ -1,0 +1,63 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+class SeeMMSIAndMoreInfoUI{
+    -SeeMMSIAndMoreInfoController controller
+}
+
+class SeeMMSIAndMoreInfoController{
+    +String getAllInfos(Ship)
+    +double calculateTravelledDistance(Ship)
+    +double calculateDeltaDistance(Ship)
+    +int calculateTotalMovements(Ship)
+    +int getMmsi(Ship)
+    +List<Ship> getAllShips()
+}
+
+class ShipStore{
+    +List<Ship> getAllShips()
+    +double calculateDistance(double,double,double,double)
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+class Ship{
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+    +List<Ship>getShips()
+}
+
+class ShipDynamicData{
+    -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+}
+
+enum VesselType {
+  Passenger
+  Fishing
+  Tugboat
+}
+
+SeeMMSIAndMoreInfoUI ..> SeeMMSIAndMoreInfoController
+SeeMMSIAndMoreInfoController ..> ShipStore
+ShipStore "1" -- "0..*" Ship : has >
+TrafficManager "1" -- "0..*" Ship : see the info >
+Ship "1" -- "1..*" ShipDynamicData : has  >
+Ship "1" -- "1" VesselType : has >
+@enduml

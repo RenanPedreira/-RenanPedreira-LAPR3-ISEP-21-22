@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class MostEfficiencyCircuitUI{}
+class MostEfficiencyCircuitController{
+    +Pair<LinkedList<VertexLocation>,Double> getMostEfficiencyCircuit(vertexLocationInfo,type)
+}
+class TrafficManager{
+    -String name
+    -String email
+}
+class Company{
+    -String designation
+}
+
+class VertexLocation{
+    -String locationID
+    -String locationName
+    -String continent
+    -String countryName
+    -Double latitude
+    -Double longitude
+}
+
+class FreightNetwork{
+    -AdjacencyMatrixGraph<VertexLocation, Double> freightNetwork2
+    +Map<Integer,Pair<Pair<VertexLocation,VertexLocation>,Double>> getMostEfficiencyCircuit(VertexLocation ver)
+}
+
+
+MostEfficiencyCircuitUI ..> MostEfficiencyCircuitController
+
+MostEfficiencyCircuitController ..> FreightNetwork
+
+FreightNetwork --> VertexLocation
+TrafficManager --> VertexLocation : find the most efficiency \ncircuit that has more location \nand shortest total distance >
+
+Company --> TrafficManager : has registered >
+
+@enduml

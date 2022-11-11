@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant TrafficManager as TM
+participant ContinentNClosenessPlaceUI as UI
+participant ContinentNClosenessPlaceController as CONTROLLER
+participant FreightNetwork as FN
+
+activate TM
+TM -> UI : ask the system to the closeness places
+activate UI
+UI --> TM : ask the Traffic Manager the data(Continent and number of closeness places)
+deactivate UI
+TM -> UI : introduce the data
+activate UI
+autonumber 4.1.1
+UI -> CONTROLLER : data=getNClosenessPlaceByContinent(continent,numPlaces)
+activate CONTROLLER
+CONTROLLER -> FN : data=getNClosenessPlaceByContinent(continent,numPlaces)
+activate FN
+deactivate FN
+deactivate CONTROLLER
+
+UI-->TM : shows the closeness places of the continent
+
+@enduml

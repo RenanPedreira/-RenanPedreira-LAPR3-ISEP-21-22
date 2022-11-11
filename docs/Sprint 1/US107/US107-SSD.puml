@@ -1,0 +1,12 @@
+@startuml
+
+actor "Traffic Manager" as tm
+participant "System" as sys
+
+activate tm
+tm -> sys : **1.** Starts the process of returning the pairs of ships with close departure/arrival and with different travelled distances
+activate sys
+sys --> tm : **2.** Returns the pairs of ships organized by decreasing order of travelled distance
+deactivate sys
+
+@enduml

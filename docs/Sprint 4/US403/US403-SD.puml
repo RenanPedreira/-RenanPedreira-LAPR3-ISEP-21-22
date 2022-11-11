@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+participant TrafficManager as TM
+participant MostEfficiencyCircuitUI as UI
+participant MostEfficiencyCircuitController as C
+participant FreightNetwork as FN
+autonumber
+activate TM
+TM->UI  : asks to show the most efficiency circuit
+activate UI
+UI-->TM : asks to the source location info
+deactivate UI
+TM->UI  : introduces the source location info
+activate UI
+UI->C   : map=getMostEfficiencyCircuit(vertexLocationInfo)
+activate C
+C->FN   : map=getMostEfficiencyCircuit(vertexLocationInfo)
+activate FN
+deactivate FN
+
+deactivate C
+UI-->TM : shows all the location visited and the total distance
+deactivate UI
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+class PortManager {
+  -String name
+  -String email
+}
+
+class Port {
+  -Integer identification;
+  -String port;
+  -String continent;
+  -String country;
+  -double latitude;
+  -double longitude;
+}
+
+class Company {
+  -String designation 
+}
+
+Company "1" -- "*" Port : has registered >
+Company "1" -- "*" PortManager : has registered >
+PortManager "1" -- "0..*" Port : manage >
+
+@enduml

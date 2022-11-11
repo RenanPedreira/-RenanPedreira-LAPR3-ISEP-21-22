@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="227px" preserveAspectRatio="none" style="width:586px;height:227px;background:#FFFFFF;" version="1.1" viewBox="0 0 586 227" width="586px" zoomAndPan="magnify"><defs><filter height="300%" id="fsmq2bd01cppt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="122.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="537" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="39.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="537" y="134.6641"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="41.6094" y2="183.0156"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="542" x2="542" y1="41.6094" y2="183.0156"/><rect fill="#FEFECE" filter="url(#fsmq2bd01cppt)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="26.5332">TrafficManager</text><rect fill="#FEFECE" filter="url(#fsmq2bd01cppt)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="182.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="203.5488">TrafficManager</text><rect fill="#FEFECE" filter="url(#fsmq2bd01cppt)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="64" x="508" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="515" y="26.5332">:System</text><rect fill="#FEFECE" filter="url(#fsmq2bd01cppt)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="64" x="508" y="182.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="515" y="203.5488">:System</text><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="122.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="537" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fsmq2bd01cppt)" height="39.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="537" y="134.6641"/><polygon fill="#A80036" points="525,69.9609,535,73.9609,525,77.9609,529,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="67" x2="531" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74" y="69.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="440" x="85" y="69.1045">Ask to the system to show the most efficiency circuit from a source location</text><polygon fill="#A80036" points="78,100.3125,68,104.3125,78,108.3125,74,104.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="72" x2="541" y1="104.3125" y2="104.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="84" y="99.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="95" y="99.4561">Ask to the source location</text><polygon fill="#A80036" points="525,130.6641,535,134.6641,525,138.6641,529,134.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="67" x2="531" y1="134.6641" y2="134.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74" y="129.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="240" x="85" y="129.8076">Introduce the source location(inicial point)</text><polygon fill="#A80036" points="78,161.0156,68,165.0156,78,169.0156,74,165.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="72" x2="536" y1="165.0156" y2="165.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="84" y="160.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="178" x="95" y="160.1592">Shows the founded circuit path</text><!--MD5=[7beb8743aa847edbf269f4f521432c1d]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant TrafficManager as TM
+participant ":System" as S
+
+activate TM
+TM->S:Ask to the system to show the most efficiency circuit from a source location
+activate S
+S- ->TM:Ask to the source location
+deactivate S
+TM->S:Introduce the source location(inicial point)
+activate S
+S- ->TM: Shows the founded circuit path
+@enduml
+
+@startuml
+
+autonumber
+participant TrafficManager as TM
+participant ":System" as S
+
+activate TM
+TM->S:Ask to the system to show the most efficiency circuit from a source location
+activate S
+S- ->TM:Ask to the source location
+deactivate S
+TM->S:Introduce the source location(inicial point)
+activate S
+S- ->TM: Shows the founded circuit path
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

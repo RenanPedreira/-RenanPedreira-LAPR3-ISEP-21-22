@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant TrafficManager as TM
+participant System as S
+
+activate TM
+TM -> S : Ask the system all places closest to other places.
+activate S
+S-->TM : Ask to traffic manager to choose between ports and cities.
+deactivate S
+TM ->S : Type the choose option.
+activate S
+S-->TM : Shows all places closest to other places.
+@enduml

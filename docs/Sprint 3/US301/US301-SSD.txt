@@ -1,0 +1,16 @@
+title US301 System Sequence Diagram
+actor "Traffic Manager" as lb #7dcfff
+participant ":System" as System #7dcfff
+
+activate lb #7dcfff
+lb->System: 1: creates a freight network
+
+activate System #7dcfff
+lb<--System: 2: request data(number of closest ports)
+deactivate System #7dcfff
+
+lb->System: 3: types requested data
+activate System #7dcfff
+
+lb<--System:4: informs of operation success
+deactivate System #7dcfff

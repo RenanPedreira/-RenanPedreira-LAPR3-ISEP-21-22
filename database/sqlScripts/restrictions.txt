@@ -1,0 +1,230 @@
+--VesselType
+insert into VesselType values(null);
+insert into VesselType values('123456789123456789123456789');
+
+--Cliente
+insert into Cliente values(null);
+insert into Cliente values('123456789123456789123456789');
+
+--FleetManager
+insert into FleetManager values(null);
+insert into FleetManager values('123456789123456789123456789');
+
+--TrafficManager
+insert into TrafficManager values(null);
+insert into TrafficManager values('123456789123456789123456789');
+
+--WarehouseManager
+insert into WarehouseManager values(null);
+insert into WarehouseManager values('123456789123456789123456789');
+
+--PortManager
+insert into PortManager values(null);
+insert into PortManager values('123456789123456789123456789');
+
+--ShipCaptain
+insert into ShipCaptain values(null);
+insert into ShipCaptain values('123456789123456789123456789');
+
+--ShipChiefElectricalEngineer
+insert into ShipChiefElectricalEngineer values(null);
+insert into ShipChiefElectricalEngineer values('123456789123456789123456789');
+
+--TruckDriver
+insert into TruckDriver values(null);
+insert into TruckDriver values('123456789123456789123456789');
+
+--PortStaff
+insert into PortStaff values(null, null);
+insert into PortStaff values('123456789123456789123456789', null);
+
+--WarehouseStaff
+insert into WarehouseStaff values(null, null);
+insert into WarehouseStaff values('123456789123456789123456789', null);
+
+
+--Ship
+insert into Ship values(null, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, null, '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', null, 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', null, 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', null, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, null, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, null, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, null, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, null, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, null, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, null, 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', null, 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', null, 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', null);
+
+insert into Ship values(123456789123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, IMO1234567IMO1234567, '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345123451234512345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOYBENNY_BOYBENNY_BOYBENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 1111111, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 1111111, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 1111111, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 1111111, 111.11, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 1111111, 111.11, '70', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 1111111, '70', 'fm_1', 'sc_1', 'ce_1');
+
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '100', 'fm_1', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', '100', 'sc_1', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', '100', 'ce_1');
+insert into Ship values(123456789, 'IMO1234567', '12345', 'BENNY_BOY', 11, 11, 111.11, 111.11, 111.11, 111.11, '70', 'fm_1', 'sc_1', '100');
+
+
+--Truck
+insert into Truck values(null, 'td_1');
+insert into Truck values('truck_1', null);
+insert into Truck values(truck_1truck_1truck_1truck_1, 'td_1');
+insert into Truck values('truck_1', td_1td_1td_1td_1);
+
+
+--ShipDynamicData
+insert into ShipDynamicData values(null, 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), null, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, null, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, null, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, null, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, null, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, null, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, null, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, null, 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', null);
+insert into ShipDynamicData values('11/11/2020 11:11:11, 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 1111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 1111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 1111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 1111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 1111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 1111, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, -1111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, -1111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, -1111, 111.11111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, -1111, 111.11111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, -1111, 11, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, -1111, 'ch_11', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, '100', 'tm_1');
+insert into ShipDynamicData values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 123456789, 11.11111, 111.11111, 111.11111, 111.11111, 111.11111, 11, 'ch_11', '100');
+
+
+--Containerr
+insert into Containerr values(null, 222, 111, 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', null, 111, 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 222, null, 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 222, 111, null, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 222, 111, 111, null, 1, 11);
+insert into Containerr values('CONT1', 222, 111, 111, null, null, 11);
+insert into Containerr values('CONT1CONT1CONT1CONT1CONT1CONT1CONT1', 222, 111, 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 'abc', 111, 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 222, 'abc', 111, 'X1A0', 1, 11);
+insert into Containerr values('CONT1', 222, 111, 'abc', 'XIAO', 1, 11);
+insert into Containerr values('CONT1', 222, 111, 111, 'CONT1CONT1CONT1CONT1CONT1CONT1CONT1', 1, 11);
+insert into Containerr values('CONT1', 222, 111, 111, null, 99, 11);
+
+
+--CargoManifest
+insert into CargoManifest values(null, 'CONT1', 1, 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), null, 1, 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', null, 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 1, null, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 1, 1, null);
+insert into CargoManifest values('11/11/2020 11:11:11', 'CONT1', 1, 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1CONT1CONT1CONT1CONT1CONT1CONT1', 1, 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 'a', 1, 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 1, 'b', 1);
+insert into CargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 1, 1, 'c');
+
+
+--Porte
+insert into Porte values(null, 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', null, 'Portugal', 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', null, 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', null, 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', null, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', 11.11111, null, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, null);
+insert into Porte values('port1port1port1port1port1port1port1port1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'LiyueLiyueLiyueLiyueLiyueLiyueLiyueLiyue', 'Portugal', 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'PortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugal', 'EU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEU', 11.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', 1111.11111, 111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', 11.11111, 1111111.11111, 'pm_1');
+insert into Porte values('port1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, '100');
+
+
+--Warehouse
+insert into Warehouse values(null, 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', null, 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', null, 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', null, 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', null, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, null, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', null);
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, null, 'port1');
+insert into Warehouse values('whouse1whouse1whouse1whouse1whouse1whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'LiyueLiyueLiyueLiyueLiyueLiyueLiyueLiyue', 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'PortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugal', 'EU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEU', 11.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 1111.11111, 111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 1111111.11111, 'wh_1', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, '100', 'port1');
+insert into Warehouse values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111, 'wh_1', '100');
+
+
+--Locatione
+insert into Locatione values(null, 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', null, 'Portugal', 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', null, 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', null, 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', 'EU', null, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, null);
+insert into Locatione values('whouse1whouse1whouse1whouse1whouse1whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'LiyueLiyueLiyueLiyueLiyueLiyueLiyueLiyue', 'Portugal', 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'PortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugalPortugal', 'EU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', 'EUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEUEU', 11.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', 'EU', 1111.11111, 111.11111);
+insert into Locatione values('whouse1', 'Liyue', 'Portugal', 'EU', 11.11111, 1111111.11111);
+
+
+--PortStaff
+insert into PortStaff values(null, 'port1');
+insert into PortStaff values('ps_1', null);
+insert into PortStaff values('ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1', 'port1');
+insert into PortStaff values('ps_1', '100');
+
+
+--WarehouseStaff
+insert into WarehouseStaff values(null, 'whouse1');
+insert into WarehouseStaff values('ws_1', null);
+insert into WarehouseStaff values('ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1ps_1', 'whouse1');
+insert into WarehouseStaff values('ws_1', '100');
+
+
+--ShipCargoManifest
+insert into ShipCargoManifest values(null, 'CONT1', 123456789, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), null, 123456789, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', null, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 123456789, null);
+
+insert into ShipCargoManifest values('11/11/2020 11:11:11', 'CONT1', 123456789, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1CONT1CONT1CONT1CONT1CONT1', 123456789, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 12345678911111, 'port1');
+insert into ShipCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', 123456789, '100');
+
+
+--TruckCargoManifest
+insert into TruckCargoManifest values(null, 'CONT1', 'port1');
+insert into TruckCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), null, 'whouse11');
+insert into TruckCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', null);
+
+
+insert into TruckCargoManifest values('11/11/2020 11:11:11', 'CONT1', 'whouse1');
+insert into TruckCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1CONT1CONT1CONT1CONT1CONT1', 'whouse1');
+insert into TruckCargoManifest values(TO_timestamp('11/11/2020 11:11:11', 'DD/MM/YYYY hh:mi:ss'), 'CONT1', '100');
+
+

@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+participant TrafficManager as TM
+participant System as Stm
+
+activate TM
+TM -> Stm : Ask the system to the closest port of a ship
+activate Stm
+Stm --> TM : Ask the CallSign of the ship and the DateTime
+deactivate Stm
+TM -> Stm : Introduce the CallSign and the DateTime
+activate Stm
+Stm --> TM : Return the closest port infos
+deactivate Stm
+@enduml

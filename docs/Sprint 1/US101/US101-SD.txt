@@ -1,0 +1,84 @@
+title US101 Sequence Diagram
+
+actor "Traffic Manager" as a #7dcfff
+
+participant ":ShipFileUI" as UI #7dcfff
+participant ":ShipFileController" as ctr #7dcfff
+participant "CsvReader" as csv #7dcfff
+
+participant ":Company" as c #7dcfff
+participant ":ShipStore" as ss #7dcfff
+
+participant ":Ship" as s #7dcfff
+
+a->UI: 1: imports ships from file
+activate UI #7dcfff
+
+UI-->a: 2: request data(fileName)
+deactivateafter UI
+
+a->UI: 3: types requested data
+activate UI #7dcfff
+
+loop Gets the ship from each line
+
+UI->ctr: 4: getShipLine(fileName, line)
+activate ctr #7dcfff
+
+ctr->csv: 5: line[] = createShipFromFile(fileName, line)
+activate csv #7dcfff
+deactivateafter csv
+deactivateafter ctr
+
+UI->ctr: 6: importData()
+activate ctr #7dcfff
+
+ctr->c: 7: store=getShipStore()
+activate c #7dcfff
+deactivateafter c
+
+ctr->*s: 8: fileShip(shipInfo[0]), shipInfo[8], shipInfo[9])
+
+ctr->ss: 9: validateShip(fileShip)
+activate ss #7dcfff
+ss->ss: 10: newShip(fileShip)
+activate ss #7dcfff
+deactivateafter ss
+ss->ss: 11: getShipByMMSI(mmsi)
+activate ss #7dcfff
+deactivateafter ss
+deactivateafter ss
+
+alt new ship
+ctr->ss: 12: createNewShip(fileShip)
+activate ss #7dcfff
+deactivateafter ss
+
+end
+
+ctr->ss: 13: getShipByMMSI(info[1]);
+activate ss #7dcfff
+deactivateafter ss
+
+ctr->ss: 14: addDynamicData(info);
+activate ss #7dcfff
+
+
+ss->s: 15: addDynamicData(info[1],Double.parseDouble(info[2]),Double.parseDouble(info[3]),Double.parseDouble(info[4]),Double.parseDouble(info[5]),Integer.parseInt(info[6]),info[14],info[15]));
+activate s #7dcfff
+deactivateafter ss
+deactivateafter s
+deactivateafter ctr
+
+
+UI->ctr: 16: addCreatedShip()
+activate ctr #7dcfff
+
+ctr->ss: 17: saveShip(ship)
+activate ss #7dcfff
+
+deactivateafter ss
+deactivateafter ctr
+end
+
+UI-->a: 15: informs of operation success

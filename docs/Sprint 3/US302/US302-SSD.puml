@@ -1,0 +1,17 @@
+@startuml
+
+autonumber 1.0
+
+activate TrafficManager
+
+TrafficManager -> System: Starts the process of coloring the map
+
+activate System
+
+System --> TrafficManager: Colours all countries and informs about the operation success
+
+deactivate System
+
+deactivate TrafficManager
+ 
+@enduml

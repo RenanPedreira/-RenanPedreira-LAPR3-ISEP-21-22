@@ -1,0 +1,64 @@
+@startuml
+
+class SearchShipDetailsUI {
+
+}
+
+class SearchShipDetailsController {
+  +List<Ship> getShipsList()
+  +getShipByMMSI(mmsi)
+  +getShipByIMO(imo)
+  +getShipByCallSign(callSign)
+  +searchShipByMMSI(mmsi)
+  +searchShipByIMO(imo)
+  +searchShipByCallSign(callSign)
+}
+
+class Company {
+  -String designation
+  +getShipStore()
+}
+
+class ShipStore {
+  +Ship getShipByMMSI(mmsi)
+  +Ship getShipByIMO(imo)
+  +Ship getShipByCallSign(callSign)
+}  
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -String type
+    -Double length
+    -Double width
+    -Double draft
+    +List<Ship>getShips()
+}
+
+class ShipDynamicData {
+    -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+    +getDynamicData()
+}
+  
+SearchShipDetailsUI ..> SearchShipDetailsController
+SearchShipDetailsController ..> Company
+Company ..> ShipStore
+ShipStore ..> Ship
+TrafficManager "1" -- "1" Ship : controls the position of >
+Ship "*" -- "*" ShipDynamicData : has >
+
+@enduml

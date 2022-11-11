@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="405px" preserveAspectRatio="none" style="width:1461px;height:405px;background:#FFFFFF;" version="1.1" viewBox="0 0 1461 405" width="1461px" zoomAndPan="magnify"><defs><filter height="300%" id="fcvkpkrayaj2j" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="300.1641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="47.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="507.5" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="217.1094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="507.5" y="134.6641"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="186.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="781.5" y="165.0156"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="110.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1055.5" y="195.3672"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="36.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1423.5" y="269.0703"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="52" x2="52" y1="41.6094" y2="360.7734"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="512" x2="512" y1="41.6094" y2="360.7734"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="786" x2="786" y1="41.6094" y2="360.7734"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1060.5" x2="1060.5" y1="41.6094" y2="360.7734"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1428.5" x2="1428.5" y1="41.6094" y2="360.7734"/><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="91" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="12" y="26.5332">ShipCaptain</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="91" x="5" y="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="12" y="381.3066">ShipCaptain</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="227" x="397" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="404" y="26.5332">DetermineTheShipsCenterMassUI</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="227" x="397" y="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="404" y="381.3066">DetermineTheShipsCenterMassUI</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="277" x="646" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="653" y="26.5332">DetermineTheShipsCenterMassController</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="277" x="646" y="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="653" y="381.3066">DetermineTheShipsCenterMassController</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="76" x="1020.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="1027.5" y="26.5332">ShipStore</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="76" x="1020.5" y="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="1027.5" y="381.3066">ShipStore</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="42" x="1405.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="1412.5" y="26.5332">Ship</text><rect fill="#FEFECE" filter="url(#fcvkpkrayaj2j)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="42" x="1405.5" y="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="1412.5" y="381.3066">Ship</text><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="300.1641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="47.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="507.5" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="217.1094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="507.5" y="134.6641"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="186.7578" style="stroke:#A80036;stroke-width:1.0;" width="10" x="781.5" y="165.0156"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="110.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1055.5" y="195.3672"/><rect fill="#FFFFFF" filter="url(#fcvkpkrayaj2j)" height="36.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1423.5" y="269.0703"/><polygon fill="#A80036" points="495.5,69.9609,505.5,73.9609,495.5,77.9609,499.5,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="57.5" x2="501.5" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="64.5" y="69.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="314" x="75.5" y="69.1045">ask the system to calculate how much the vessel sink</text><polygon fill="#A80036" points="68.5,100.3125,58.5,104.3125,68.5,108.3125,64.5,104.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62.5" x2="511.5" y1="104.3125" y2="104.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74.5" y="99.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="85.5" y="99.4561">ask to identify the vessel</text><polygon fill="#A80036" points="495.5,130.6641,505.5,134.6641,495.5,138.6641,499.5,134.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="57.5" x2="501.5" y1="134.6641" y2="134.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="64.5" y="129.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="75.5" y="129.8076">introduce the data</text><polygon fill="#A80036" points="769.5,161.0156,779.5,165.0156,769.5,169.0156,773.5,165.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="517.5" x2="775.5" y1="165.0156" y2="165.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="524.5" y="160.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="535.5" y="160.1592">calculateHowMuchVesselSink(shipsInfo)</text><polygon fill="#A80036" points="1043.5,191.3672,1053.5,195.3672,1043.5,199.3672,1047.5,195.3672" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="791.5" x2="1049.5" y1="195.3672" y2="195.3672"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="798.5" y="190.5107">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="809.5" y="190.5107">calculateHowMuchVesselSink(shipsInfo)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1065.5" x2="1107.5" y1="225.7188" y2="225.7188"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1107.5" x2="1107.5" y1="225.7188" y2="238.7188"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1066.5" x2="1107.5" y1="238.7188" y2="238.7188"/><polygon fill="#A80036" points="1076.5,234.7188,1066.5,238.7188,1076.5,242.7188,1072.5,238.7188" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="1072.5" y="220.8623">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171" x="1083.5" y="220.8623">ship=getShipByInfo(shipsInfo)</text><polygon fill="#A80036" points="1411.5,265.0703,1421.5,269.0703,1411.5,273.0703,1415.5,269.0703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1065.5" x2="1417.5" y1="269.0703" y2="269.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="1072.5" y="264.2139">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="1083.5" y="264.2139">data=ship.getData()</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1065.5" x2="1107.5" y1="304.4219" y2="304.4219"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1107.5" x2="1107.5" y1="304.4219" y2="317.4219"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1060.5" x2="1107.5" y1="317.4219" y2="317.4219"/><polygon fill="#A80036" points="1070.5,313.4219,1060.5,317.4219,1070.5,321.4219,1066.5,317.4219" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="1072.5" y="299.5654">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="333" x="1083.5" y="299.5654">calculateTheMassCenterAndMakeTheSkecth(data,format)</text><polygon fill="#A80036" points="68.5,338.7734,58.5,342.7734,68.5,346.7734,64.5,342.7734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62.5" x2="506.5" y1="342.7734" y2="342.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74.5" y="337.917">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="415" x="85.5" y="337.917">informs the success of the operation and opens the sketch of the vessel</text><!--MD5=[8822a82f6b6dc44fdc0997522f51ad07]
+@startuml
+'https://plantuml.com/sequence-diagram
+participant ShipCaptain as SC
+participant DetermineTheShipsCenterMassUI as UI
+participant DetermineTheShipsCenterMassController as Controller
+participant ShipStore as Store
+participant Ship as S
+
+autonumber
+activate SC
+SC->UI : ask the system to calculate how much the vessel sink
+activate UI
+UI- ->SC : ask to identify the vessel
+deactivate UI
+SC->UI : introduce the data
+activate UI
+UI->Controller : calculateHowMuchVesselSink(shipsInfo)
+activate Controller
+Controller->Store: calculateHowMuchVesselSink(shipsInfo)
+activate Store
+Store ->Store : ship=getShipByInfo(shipsInfo)
+Store ->S : data=ship.getData()
+activate S
+
+
+Store -> Store : calculateTheMassCenterAndMakeTheSkecth(data,format)
+deactivate S
+deactivate Store
+
+UI- ->SC : informs the success of the operation and opens the sketch of the vessel
+
+@enduml
+
+@startuml
+participant ShipCaptain as SC
+participant DetermineTheShipsCenterMassUI as UI
+participant DetermineTheShipsCenterMassController as Controller
+participant ShipStore as Store
+participant Ship as S
+
+autonumber
+activate SC
+SC->UI : ask the system to calculate how much the vessel sink
+activate UI
+UI- ->SC : ask to identify the vessel
+deactivate UI
+SC->UI : introduce the data
+activate UI
+UI->Controller : calculateHowMuchVesselSink(shipsInfo)
+activate Controller
+Controller->Store: calculateHowMuchVesselSink(shipsInfo)
+activate Store
+Store ->Store : ship=getShipByInfo(shipsInfo)
+Store ->S : data=ship.getData()
+activate S
+
+
+Store -> Store : calculateTheMassCenterAndMakeTheSkecth(data,format)
+deactivate S
+deactivate Store
+
+UI- ->SC : informs the success of the operation and opens the sketch of the vessel
+
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

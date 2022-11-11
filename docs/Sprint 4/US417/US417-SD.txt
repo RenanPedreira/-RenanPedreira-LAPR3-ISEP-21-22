@@ -1,0 +1,28 @@
+title US417 Sequence Diagram
+actor "Ship Captain" as tm #7dcfff
+participant ":VesselTypeTaskUI" as ui #7dcfff
+participant ":VesselTypeTaskController" as ct #7dcfff
+participant ":VesselTypeTaskDB" as db #7dcfff
+
+tm->ui: 1:  get the 3 better suited vessel types for a task
+activate ui #7dcfff
+ui-->tm: 2: request data(cargo manifest)
+deactivateafter ui
+
+tm->ui: 3: types requested data
+activate ui #7dcfff
+
+ui->ct: 4: getVesselTypesForTask(manifestID)
+activate ct #7dcfff
+
+ct->db: 5: getVesselTypesForTask(manifestID)
+activate db #7dcfff
+
+ct<--db: 6: vesselTypeList
+deactivateafter db
+
+ui<--ct: 7: vesselTypeList
+deactivateafter ct
+
+ui-->tm: 8: shows the 3 most suited vessel types
+deactivateafter ui

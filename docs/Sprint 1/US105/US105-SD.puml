@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant TrafficManager as TM
+participant SeeMMSIAndMoreInfoUI as SMAMIUI
+participant SeeMMSIAndMoreInfoController as SMAMIC
+participant ShipStore as SS
+participant Ship as S
+
+activate TM
+
+TM -> SMAMIUI : ask the system the MMSI the total number of movements, Travelled Distance and Delta Distance organized
+
+activate SMAMIUI
+SMAMIUI -> SMAMIC : listShip=getShipList()
+activate SMAMIC
+SMAMIC -> SS : listShip=getAllShips()
+activate SS
+deactivate SS
+
+deactivate SMAMIC
+SMAMIUI -> SMAMIC : printTheInfos(listShip)
+activate SMAMIC
+    loop listShip.size() times
+        SMAMIC -> S : listShipDynamicData=getAllShipDynamicData()
+        activate S
+        deactivate S
+        SMAMIC-> SMAMIC  : getTheInfosAndPrintIt(listShipDynamicData)
+    end
+deactivate SMAMIC
+SMAMIUI --> TM : show to the Traffic Manager the info asked
+@enduml

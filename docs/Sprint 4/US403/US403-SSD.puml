@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant TrafficManager as TM
+participant ":System" as S
+
+activate TM
+TM->S:Ask to the system to show the most efficiency circuit from a source location
+activate S
+S-->TM:Ask to the source location
+deactivate S
+TM->S:Introduce the source location(inicial point)
+activate S
+S-->TM: Shows the founded circuit path
+@enduml

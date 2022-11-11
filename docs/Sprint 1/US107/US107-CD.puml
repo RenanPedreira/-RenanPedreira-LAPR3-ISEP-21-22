@@ -1,0 +1,71 @@
+@startuml
+
+class ReturnPairsShipsUI {
+
+}
+
+class ReturnPairsShipsController {
+  +List<Ship> getAllShips()
+  +List<Pair<Ship, Ship>> getAllPairsClosePorts()
+}
+
+class ShipStore{
+    +List<Ship> getAllShips()
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -Integer generatorsNumber
+    -Double generatorPowerOut
+    -VesselType type
+    -Double length
+    -Double width
+    -Double capacity
+    -Double draft
+}
+
+class ShipDynamicData {
+    -Date dateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Integer heading
+    -Integer trailerId
+    -String transceiver
+}
+
+class ShipDynamicData{
+    -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+}
+
+enum VesselType {
+  Passenger
+  Fishing
+  Tugboat
+}
+
+
+ReturnPairsShipsUI ..> ReturnPairsShipsController
+ReturnPairsShipsController ..> ShipStore
+ShipStore "1" -- "0..*" Ship : has >
+TrafficManager "1" -- "0..*" Ship : see the info >
+Ship "1" -- "1..*" ShipDynamicData : has  >
+Ship "1" -- "1" VesselType : has >
+
+@enduml

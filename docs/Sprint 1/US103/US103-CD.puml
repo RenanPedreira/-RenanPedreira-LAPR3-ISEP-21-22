@@ -1,0 +1,60 @@
+@startuml
+'Created by Danilton 1191240
+
+class SeeOrganizedMessagesUI{
+    -SeeOrganizedMessagesController controller
+}
+
+class SeeOrganizedMessagesController{
+    +List<PositionalMessage> getAllMessages()
+    +void organizeListMessage()
+}
+
+class AISMessageStore{
+    +List<AISMessage> organizeMessages()
+    +AISMessageStore getStore()
+    +List<AISMessage> getAISMessagesByPeriod(int,LocalDateTime,LocalDateTime)
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -Integer generatorsNumber
+    -Double generatorPowerOut
+    -VesselType type
+    -Double length
+    -Double width
+    -Double capacity
+    -Double draft
+}
+
+class AISMessage {
+   -Integer mmsi
+}
+
+class ShipDynamicData {
+    -Date dateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Integer heading
+    -Integer trailerId
+    -String transceiver
+}
+
+SeeOrganizedMessagesUI ..> SeeOrganizedMessagesController
+SeeOrganizedMessagesController ..> AISMessageStore
+AISMessageStore ..> AISMessage
+TrafficManager "1..*" -- "0..*" AISMessage : control the >
+AISMessage "1" -- "0..*" ShipDynamicData :  has registered >
+ShipDynamicData "1" -- "1" Ship : of the >
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml Domain Model
+skinparam style strictuml
+hide empty members
+
+Ship "1" -- "*" ShipCargo : is transported <
+Ship "1" -- "*" ShipDynamicData : is located through >
+Ship "1" -- "*" AISMessage : sends >
+VesselType "1" -- "*" Ship : has <
+
+Truck "1" -- "1" TruckDriver : drives <
+Truck "1" -- "*" TruckCargo : carries >
+Location "1" -- "*" TruckCargo : of >
+CargoManifest "1" -- "*" TruckCargo : has <
+Container "1" -- "*" CargoManifest : locates >
+
+Port "1" -- "*" ShipCargo : is on <
+Port "1" -- "1" Warehouse : belongs to <
+
+ShipCaptain "1" -- "1" Ship : leads >
+ShipChiefElectricalEngineer "1" -- "1" Ship : works on >
+
+Port "1" -- "*" PortStaff : has >
+Warehouse "1" -- "*" WarehouseStaff : has >
+
+TrafficManager "1" -- "*" ShipDynamicData : manages >
+FleetManager "1" -- "*" Ship : manages >
+FleetManager "1" -- "*" Truck : manages >
+PortManager "1" -- "*" Port : manages >
+WarehouseManager "1" -- "1" Warehouse : manages >
+
+@enduml

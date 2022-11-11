@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+participant ShipCaptain as SC
+participant ":System" as S
+autonumber
+activate SC
+SC->S   : ask the system to determine the unladen center of mass for each vessel
+activate S
+S-->S   : get the ships and calculate the center of mass by its formats.
+S--> SC : shows the center of mass of each ships.
+@enduml

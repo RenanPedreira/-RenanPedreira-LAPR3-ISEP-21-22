@@ -1,0 +1,72 @@
+@startuml
+
+class ImportPortsUI {
+  
+}
+
+class ImportPortsController {
+  +importPortFromFile2(file)
+  +portFromLine(info[])
+  +save(Connection, p)
+  +portsFromDB()
+  +getList()
+  +saveKDTree(listOfNodes)
+  +getKDTree(listOfNodes)
+}
+
+class Company {
+  -String designation
+  +getPortStore()
+}
+
+
+class PortStore {
+  +createPort(id, name, continent, country, lat, lon)
+  +new Port(id, name, continent, country, lat, lon)
+  +savePort(Port p)
+  +getList()
+  +saveKDTree(listOfNodes)
+}  
+
+class PortManager {
+  -String name
+  -String email
+}
+
+class Port {
+  -Integer identification;
+  -String name;
+  -String continent;
+  -String country;
+  -double latitude;
+  -double longitude;
+}
+
+class DatabaseConnection {
+  +getConnection()
+}
+
+class ConnectionFactory {
+  getDatabaseConnection()
+}
+
+class PortStoreDB {
+  +new PortStoreDB()
+  +portsFromDB()
+}
+
+class KDTree {
+  +new KDTree(listOfNodes)
+}
+  
+ImportPortsUI ..> ImportPortsController
+ImportPortsController ..> Company
+ImportPortsController ..> DatabaseConnection
+ImportPortsController ..> ConnectionFactory
+ImportPortsController ..> PortStoreDB
+ImportPortsController ..> KDTree
+Company ..> PortStore
+PortStore ..> Port
+PortManager "1" -- "0..*" Port : manage >
+
+@enduml

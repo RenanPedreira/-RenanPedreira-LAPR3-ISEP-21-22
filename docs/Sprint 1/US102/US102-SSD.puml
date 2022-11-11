@@ -1,0 +1,23 @@
+@startuml
+
+activate TrafficManager
+
+TrafficManager -> System: **1:** Starts the process of searching the details of a ship using any of its codes
+
+activate System
+
+System --> TrafficManager: **1.1:** Requests necessary data: MMSI, IMO or Call Sign
+
+deactivate System
+
+TrafficManager -> System: **2:** Inserts requested data
+
+activate System
+
+System --> TrafficManager: **2.1:** Presents the data and informs the Traffic Manager about the operation success
+
+deactivate System
+
+deactivate TrafficManager
+
+@enduml

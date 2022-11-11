@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="227px" preserveAspectRatio="none" style="width:563px;height:227px;background:#FFFFFF;" version="1.1" viewBox="0 0 563 227" width="563px" zoomAndPan="magnify"><defs><filter height="300%" id="fg6o7te5e4cjc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="122.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="516" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="516" y="134.6641"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="41.6094" y2="183.0156"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="521" x2="521" y1="41.6094" y2="183.0156"/><rect fill="#FEFECE" filter="url(#fg6o7te5e4cjc)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="26.5332">TrafficManager</text><rect fill="#FEFECE" filter="url(#fg6o7te5e4cjc)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="182.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="203.5488">TrafficManager</text><rect fill="#FEFECE" filter="url(#fg6o7te5e4cjc)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="60" x="489" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="496" y="26.5332">System</text><rect fill="#FEFECE" filter="url(#fg6o7te5e4cjc)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="60" x="489" y="182.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="496" y="203.5488">System</text><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="122.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="516" y="73.9609"/><rect fill="#FFFFFF" filter="url(#fg6o7te5e4cjc)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="516" y="134.6641"/><polygon fill="#A80036" points="504,69.9609,514,73.9609,504,77.9609,508,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="67" x2="510" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74" y="69.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="230" x="85" y="69.1045">Ask the system to positional messages</text><polygon fill="#A80036" points="78,100.3125,68,104.3125,78,108.3125,74,104.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="72" x2="520" y1="104.3125" y2="104.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="84" y="99.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="95" y="99.4561">ask the date</text><polygon fill="#A80036" points="504,130.6641,514,134.6641,504,138.6641,508,134.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="67" x2="510" y1="134.6641" y2="134.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74" y="129.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="85" y="129.8076">Put the date/period</text><polygon fill="#A80036" points="78,161.0156,68,165.0156,78,169.0156,74,165.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="72" x2="520" y1="165.0156" y2="165.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="84" y="160.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="414" x="95" y="160.1592">Organize the positional messages by time and associated by each ship</text><!--MD5=[4a3e06c1bd2d97353dc6707925dd5c22]
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+activate TrafficManager
+
+ TrafficManager ->  System:  Ask the system to positional messages
+ activate System
+
+ System - -> TrafficManager: ask the date
+ deactivate System
+ TrafficManager ->  System:  Put the date/period
+ activate System
+ System - -> TrafficManager:  Organize the positional messages by time and associated by each ship
+deactivate System
+@enduml
+
+@startuml
+autonumber
+activate TrafficManager
+
+ TrafficManager ->  System:  Ask the system to positional messages
+ activate System
+
+ System - -> TrafficManager: ask the date
+ deactivate System
+ TrafficManager ->  System:  Put the date/period
+ activate System
+ System - -> TrafficManager:  Organize the positional messages by time and associated by each ship
+deactivate System
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

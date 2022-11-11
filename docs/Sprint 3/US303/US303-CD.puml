@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ContinentNClosenessPlaceUI{
+}
+class ContinentNClosenessPlaceController{
+    +Map<Integer,Pair<Pair<VertexLocation,VertexLocation>,Double>> getNClosenessPlaceByContinent(Continent,n)
+}
+
+
+class Port{
+    -String continent
+    -String country
+    -Integer code
+    -String port
+    -Double lat
+    -Double lon
+}
+
+class City{
+    -String continent
+    -String Alpha2-Code
+    -String Alpha3-Code
+    -String name
+    -double population
+    -String capital
+    -double latitude
+    -double longitude
+}
+
+class FreightNetwork{
+    -AdjacencyMatrixGraph<VertexLocation, Double> freightNetwork2
+    +Map<Integer,Pair<Pair<VertexLocation,VertexLocation>,Double>> getNClosenessPlaceByContinent(String continent, int n)
+}
+
+class TrafficManager{
+    -String name
+    -String email
+}
+
+class VertexLocation{
+    -String locationID
+    -String locationName
+    -String continent
+    -String countryName
+    -Double latitude
+    -Double longitude
+}
+
+ContinentNClosenessPlaceUI ..> ContinentNClosenessPlaceController
+
+ContinentNClosenessPlaceController ..> FreightNetwork
+
+FreightNetwork --> VertexLocation
+
+VertexLocation --> Port : has info about >
+VertexLocation --> City : has info about >
+
+TrafficManager --> VertexLocation : wants to find the n closeness >
+
+
+@enduml

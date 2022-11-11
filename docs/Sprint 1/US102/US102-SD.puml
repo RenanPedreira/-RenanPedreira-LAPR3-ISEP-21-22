@@ -1,0 +1,67 @@
+@startuml
+
+autonumber
+
+activate TrafficManager
+
+TrafficManager -> ":SearchShipDetailsUI" : Starts the proccess of searching the ship details
+
+activate ":SearchShipDetailsUI"
+
+":SearchShipDetailsUI" -> ":SearchShipDetailsController" : shipList=getShipsList()
+
+activate ":SearchShipDetailsController"
+
+":SearchShipDetailsController" -> ":ShipStore" : shipList=getAllShips()
+
+activate ":ShipStore"
+
+":ShipStore" -> ":Ship" : shipList=getShips()
+
+activate ":Ship"
+
+deactivate ":ShipStore"
+
+deactivate ":Ship"
+
+deactivate ":SearchShipDetailsController"
+
+":SearchShipDetailsUI" --> TrafficManager : requests necessary data
+
+deactivate ":SearchShipDetailsUI"
+
+TrafficManager -> ":SearchShipDetailsUI" : inserts the requested data
+
+activate ":SearchShipDetailsUI"
+
+":SearchShipDetailsUI" -> ":SearchShipDetailsController" : searchShipByCode(code)
+
+activate ":SearchShipDetailsController"
+
+":SearchShipDetailsUI" -> ":SearchShipDetailsController" : getShipByCode(code)
+
+":SearchShipDetailsController" -> ":ShipStore" : flag=searchShipByCode(code)
+
+activate ":ShipStore"
+
+":SearchShipDetailsController" -> ":ShipStore" : ship=getShipByCode(code)
+
+":ShipStore" -> ":Ship" : flag=searchShipByCode()
+
+activate ":Ship"
+
+":ShipStore" -> ":Ship" : ship=getShipByCode()
+
+deactivate ":ShipStore"
+
+deactivate ":Ship"
+
+deactivate ":SearchShipDetailsController"
+
+":SearchShipDetailsUI" --> TrafficManager : Presents the data and informs the Traffic Manager about the success of the operation
+
+deactivate ":SearchShipDetailsUI"
+
+deactivate TrafficManager
+
+@enduml

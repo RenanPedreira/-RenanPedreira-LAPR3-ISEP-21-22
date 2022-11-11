@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+participant ShipCaptain as SC
+participant DetermineTheShipsCenterMassUI as UI
+participant DetermineTheShipsCenterMassController as Controller
+participant ShipStore as Store
+participant Ship as S
+participant ExternalInterface as EI
+
+autonumber
+activate SC
+SC->UI : ask the system to determine the center of the mass of a ship
+activate UI
+UI-->SC : ask to identify the vessel and it's format
+deactivate UI
+SC->UI : introduce the data
+activate UI
+UI->Controller : calculateTheMassCenter(shipsInfo,format)
+activate Controller
+Controller->Store: calculateTheShipsMassCenter(shipsInfo,format)
+activate Store
+Store ->Store : ship=getShipByInfo(shipsInfo)
+Store ->S : data=ship.getData()
+activate S
+
+deactivate S
+Store -> EI : calculateTheMassCenterAndMakeTheSkecth(data,format)
+activate EI
+deactivate EI
+
+deactivate Store
+
+
+UI-->SC : informs the success of the operation and opens the sketch of the vessel
+
+@enduml

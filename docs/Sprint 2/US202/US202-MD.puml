@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company{
+    -String designation
+}
+
+class TrafficManager{
+    -String name
+    -String email
+}
+
+class Port{
+    -String continent
+    -String country
+    -Integer code
+    -String port
+    -Double lat
+    -Double lon
+}
+
+class Ship{
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+    -ShipDynamicData position
+}
+
+Company "1" --> "1..*" TrafficManager : has registered >
+Company "1" --> "*" Port : has registered >
+Company "1" --> "0..*" Ship : has registered >
+
+TrafficManager "1..*" --> "0..*" Port : find the closest >
+TrafficManager "1..*" --> "0..*" Ship : manage >
+
+Port "1" --> "1..*" Ship : of a
+
+
+
+@enduml

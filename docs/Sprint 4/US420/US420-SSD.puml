@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+participant ShipCaptain as SC
+participant DetermineTheShipsCenterMassUI as UI
+participant DetermineTheShipsCenterMassController as Controller
+participant ShipStore as Store
+participant Ship as S
+
+autonumber
+activate SC
+SC->UI : ask the system to calculate how much the vessel sink
+activate UI
+UI-->SC : ask to identify the vessel
+deactivate UI
+SC->UI : introduce the data
+activate UI
+UI->Controller : calculateHowMuchVesselSink(shipsInfo)
+activate Controller
+Controller->Store: calculateHowMuchVesselSink(shipsInfo)
+activate Store
+Store ->Store : ship=getShipByInfo(shipsInfo)
+Store ->S : data=ship.getData()
+activate S
+
+
+Store -> Store : calculateTheMassCenterAndMakeTheSkecth(data,format)
+deactivate S
+deactivate Store
+
+UI-->SC : informs the success of the operation and opens the sketch of the vessel
+
+@enduml

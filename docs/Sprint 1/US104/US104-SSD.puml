@@ -1,0 +1,31 @@
+@startuml
+
+activate TrafficManager
+
+TrafficManager -> System: **1:** Starts the process of making a summary of a ship's movements
+
+activate System
+
+System --> TrafficManager: **1.1:** Asks the Traffic Manager which ship he wants to make the summary 
+
+deactivate System
+
+TrafficManager -> System: **2:** Selects the ship
+
+activate System
+
+System --> TrafficManager: **2.1:** Displays the data requesting confirmation to make the summary
+
+deactivate System
+
+TrafficManager -> System: **3:** Confirms
+
+activate System
+
+System --> TrafficManager: **3.1:** Informs the Traffic Manager about the success of the operation
+
+deactivate System
+
+deactivate TrafficManager
+
+@enduml

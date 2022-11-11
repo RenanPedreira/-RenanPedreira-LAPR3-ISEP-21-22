@@ -1,0 +1,35 @@
+@startuml
+
+autonumber
+actor TrafficManager as TM
+participant ReturnPairsShipsUI as UI
+participant ReturnPairsShipsController as CON
+participant ShipStore as SS
+participant Ship as S
+
+activate TM
+TM -> UI : ask the system to return pairs of ships with routes \n with close departure/arrival coordinates (no more than 5 Kms away) \n and with different Travelled Distance
+
+activate UI
+UI -> CON : closeShipsAndDistance=getAllPairsClosePorts()
+
+activate CON
+CON -> SS : listShip=getAllShips()
+
+activate SS
+deactivate SS
+
+deactivate CON
+UI -> CON : getTheInfos(closeShipsAndDistance)
+activate CON
+    loop closeShipsAndDistance.size() times
+        CON -> S : closeShipsAndDistance=getAllPairsClosePorts()
+        activate S
+        deactivate S
+        CON -> CON : getTheInfos(listShipDynamicData)
+    end
+deactivate CON
+
+UI --> TM : show to the Traffic Manager the info asked
+
+@enduml

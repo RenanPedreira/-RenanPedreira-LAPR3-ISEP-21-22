@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class DetermineTheShipsCenterMassUI{}
+class DetermineTheShipsCenterMassController{
+    +determineShipsCenterMass(ship)
+}
+class ShipStore{
+    -AVL<Ship> shipList
+    -AVL<Ship> shipList2
+    -AVL<Ship> shipList3
+    +determineShipsCenterMass(ship)
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -String type
+    -Double length
+    -Double width
+    -Double draft
+}
+
+class Company {
+  -String designation
+  +getShipStore()
+}
+
+class ShipCaptain{
+    -String name
+    -Email email
+}
+
+DetermineTheShipsCenterMassUI ..> DetermineTheShipsCenterMassController
+DetermineTheShipsCenterMassController..>ShipStore
+ShipStore-->Ship
+Company --> ShipCaptain : has registered >
+ShipCaptain --> Ship : wants to know the center mass of the >
+
+@enduml

@@ -1,0 +1,125 @@
+@startuml
+
+autonumber
+
+activate PortManager
+
+PortManager -> ":ImportPortsUI" : Starts the proccess of importing ports from a text file
+
+activate ":ImportPortsUI"
+
+":ImportPortsUI" -> PortManager : requests data(fileName)
+
+deactivate ":ImportPortsUI"
+
+PortManager -> ":ImportPortsUI" : inserts requested data
+
+activate ":ImportPortsUI"
+
+":ImportPortsUI" -> ":ImportPortsController" : importPortFromFile2(file)
+
+activate ":ImportPortsController"
+
+":ImportPortsController" -> "DatabaseConnection" : getConnection()
+
+activate "DatabaseConnection"
+
+deactivate "DatabaseConnection"
+
+":ImportPortsController" -> "ConnectionFactory" : getDatabaseConnection()
+
+activate "ConnectionFactory"
+
+deactivate "ConnectionFactory"
+
+":ImportPortsController" -> ":PortStoreDB" : new PortStoreDB()
+
+activate ":PortStoreDB"
+
+deactivate ":PortStoreDB"
+
+deactivate ":ImportPortsController"
+
+loop  ["[Gets the ports"]
+
+":ImportPortsUI" -> ":ImportPortsController" : Port p = portFromLine(info [])
+
+activate ":ImportPortsController"
+
+":ImportPortsUI" -> ":ImportPortsController" : psdb.save(connection, p)
+
+":ImportPortsUI" -> ":ImportPortsController" : portsFromDB()
+
+":ImportPortsController" -> Company : store=getPortStore()
+
+activate Company
+
+deactivate Company
+
+":ImportPortsController" -> ":PortStoreDB" : portsFromDB()
+
+activate ":PortStoreDB"
+
+deactivate ":PortStoreDB"
+
+":ImportPortsController" -> ":PortStore" : createPort(id, name, continent, country, lat, lon)
+
+activate ":PortStore"
+
+":PortStore" -> ":PortStore" : new Port(id, name, continent, country, lat, lon)
+
+deactivate ":PortStore"
+
+":ImportPortsController" -> ":PortStore" : savePort(Port p)
+
+activate ":PortStore"
+
+deactivate ":PortStore"
+
+deactivate ":ImportPortsController"
+
+":ImportPortsUI" -> ":ImportPortsController" : listOfNodes=ipc.getList()
+
+activate ":ImportPortsController"
+
+":ImportPortsController" -> ":PortStore" : nodes=getList()
+
+activate ":PortStore"
+
+deactivate ":PortStore"
+
+deactivate ":ImportPortsController"
+
+":ImportPortsUI" -> ":ImportPortsController" : saveKDTree(listOfNodes)
+
+activate ":ImportPortsController"
+
+":ImportPortsController" -> ":PortStore" : saveKDTree(listOfNodes)
+
+activate ":PortStore"
+
+":PortStore" -> ":KDTree" : KDTree kdTree = new KDTree(listOfNodes)
+
+activate ":KDTree"
+
+deactivate ":KDTree"
+
+deactivate ":PortStore"
+
+deactivate ":ImportPortsController"
+
+":ImportPortsUI" -> ":ImportPortsController" : getKDTree(listOfNodes)
+
+activate ":ImportPortsController"
+
+deactivate ":ImportPortsController"
+
+end loop
+
+":ImportPortsUI" -> PortManager : informs about the success of the operation
+
+deactivate ":ImportPortsUI"
+
+deactivate PortManager
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+'By: Danilton Lopes 1191240
+autonumber
+participant "TrafficManager" as TM
+participant ":ShowMessagesUI" as SMUI
+participant ":ShowMessagesController" as SMC
+participant ":MessageStore" as MS
+activate TM
+TM -> SMUI  : Ask the system to positional messages temporally
+activate SMUI
+SMUI -> TM :ask the date/period
+deactivate SMUI
+TM -> SMUI : introduce the date/period
+activate SMUI
+SMUI -> SMC : messageList=getOrganizedList()
+activate SMC
+SMC -> MS   : messageList=getAllMessages()
+activate MS
+SMC->SMC    : messageList=organizeMessages(messageList)
+deactivate MS
+SMUI-->TM   : Show the list of the messages  temporally
+deactivate SMC
+deactivate SMUI
+@enduml

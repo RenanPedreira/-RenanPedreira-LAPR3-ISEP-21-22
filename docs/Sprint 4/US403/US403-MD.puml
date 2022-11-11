@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class TrafficManager{
+    -String name
+    -String email
+}
+class Company{
+    -String designation
+}
+
+class VertexLocation{
+    -String locationID
+    -String locationName
+    -String continent
+    -String countryName
+    -Double latitude
+    -Double longitude
+}
+
+
+Company --> TrafficManager : has registered >
+Company --> VertexLocation : has registered >
+
+TrafficManager -> VertexLocation : wants to find the most efficiency \ncircuit that has more location \nand shortest total distance >
+
+@enduml

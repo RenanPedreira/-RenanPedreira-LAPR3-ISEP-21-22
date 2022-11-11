@@ -1,0 +1,27 @@
+@startuml
+
+autonumber 1.0
+
+activate TrafficManager
+
+TrafficManager -> System: Starts the process of knowing the shortest path between two locals
+
+activate System
+
+System --> TrafficManager: Asks the Traffic Manager if the path is by land and/or sea
+
+deactivate System
+
+autonumber 2.0
+
+TrafficManager -> System: Chooses whether the path is by land and/or sea
+
+activate System
+
+System --> TrafficManager: Informs the Traffic Manager about the success of the operation
+
+deactivate System
+
+deactivate TrafficManager
+ 
+@enduml

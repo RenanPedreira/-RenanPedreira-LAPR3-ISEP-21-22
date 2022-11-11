@@ -1,0 +1,39 @@
+@startuml
+
+class ShortestPathUI {
+  
+}
+
+class ShortestPathController {
+  +checkIfDepartureExist(departureLocal, matrix)
+  +checkIfArrivalExist(arrivalLocal, matrix)
+  +getShortestPath(matrix, startLocal, endLocal, result, option, opt2)
+  +nIndicatedPlaces(initial, end, matrix, numberOfPlaces, listOfPlaces, opt, opt2)
+  +orderList(matrix, startLocal, listOfPlaces, numPlaces, result, opt, opt2)
+  +getCountryByPort(port, matrix)
+  +getVertexLocationByString(freightNetwork, places, numberOfPlaces)
+  +getFinalList()
+}
+
+class Algorithms {
+  +getAlgorithms()
+  +shortestPath(g, vOrig, vDest, shortPath, opt, opt2)
+  +shortestPathLength(g, vOrig, vertices, visited, pathKeys, dist)
+  +getPath(g, vOrig, vDest, verts, pathKeys, path)
+}
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Company {
+  -String designation
+}
+  
+ShortestPathUI ..> ShortestPathController
+ShortestPathController ..> Company
+ShortestPathController ..> Algorithms
+Company "1" -- "*" TrafficManager : has registered >
+
+@enduml

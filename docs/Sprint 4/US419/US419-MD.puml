@@ -1,0 +1,29 @@
+@startuml
+
+class Company{
+    -String designation
+}
+
+class ShipCaptain{
+    -String name
+    -String email
+}
+
+class Ship{
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+    -ShipDynamicData position
+}
+
+
+Company "1" -- "*" ShipCaptain : has registered >
+Company "1" --> "0..*" Ship : has registered >
+ShipCaptain "1..*" --> "0..*" Ship : oversees ship operations >
+
+@enduml

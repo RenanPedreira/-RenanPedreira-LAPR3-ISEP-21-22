@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class FindClosestPortUI{
+}
+
+class FindClosestPortController{
+    +Port findClosestPort(callSign,dateTime)
+}
+
+class TrafficManager{
+    -String name
+    -String email
+}
+
+class Port{
+    -String continent
+    -String country
+    -Integer code
+    -String port
+    -Double lat
+    -Double lon
+}
+
+class PortStore{
+    +Port getNearestPortFromPosition(position)
+}
+
+class Ship{
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -VesselType type
+    -Double length
+    -Double width
+    -Double draft
+    -ShipDynamicData position
+}
+
+FindClosestPortUI ..> FindClosestPortController
+FindClosestPortController ..>PortStore
+
+PortStore-->Port
+TrafficManager "1..*" --> "1" Port : wants to find the closest >
+
+Port --> Ship : of a
+
+@enduml

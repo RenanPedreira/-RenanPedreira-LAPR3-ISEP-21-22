@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:894px;height:210px;background:#FFFFFF;" version="1.1" viewBox="0 0 894 210" width="894px" zoomAndPan="magnify"><defs><filter height="300%" id="f12y7402ds5c0a" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f12y7402ds5c0a)" height="105.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="47.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f12y7402ds5c0a)" height="82.7031" style="stroke:#A80036;stroke-width:1.0;" width="10" x="504.5" y="73.9609"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="52" x2="52" y1="41.6094" y2="165.6641"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="509.5" x2="509.5" y1="41.6094" y2="165.6641"/><rect fill="#FEFECE" filter="url(#f12y7402ds5c0a)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="91" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="12" y="26.5332">ShipCaptain</text><rect fill="#FEFECE" filter="url(#f12y7402ds5c0a)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="91" x="5" y="164.6641"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="12" y="186.1973">ShipCaptain</text><rect fill="#FEFECE" filter="url(#f12y7402ds5c0a)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="64" x="475.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="482.5" y="26.5332">:System</text><rect fill="#FEFECE" filter="url(#f12y7402ds5c0a)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="64" x="475.5" y="164.6641"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="482.5" y="186.1973">:System</text><rect fill="#FFFFFF" filter="url(#f12y7402ds5c0a)" height="105.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="47.5" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f12y7402ds5c0a)" height="82.7031" style="stroke:#A80036;stroke-width:1.0;" width="10" x="504.5" y="73.9609"/><polygon fill="#A80036" points="492.5,69.9609,502.5,73.9609,492.5,77.9609,496.5,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="57.5" x2="498.5" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="64.5" y="69.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="417" x="75.5" y="69.1045">ask the system to determine the unladen center of mass for each vessel</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="514.5" x2="556.5" y1="104.3125" y2="104.3125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="556.5" x2="556.5" y1="104.3125" y2="117.3125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="515.5" x2="556.5" y1="117.3125" y2="117.3125"/><polygon fill="#A80036" points="525.5,113.3125,515.5,117.3125,525.5,121.3125,521.5,117.3125" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="521.5" y="99.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="355" x="532.5" y="99.4561">get the ships and calculate the center of mass by its formats.</text><polygon fill="#A80036" points="68.5,143.6641,58.5,147.6641,68.5,151.6641,64.5,147.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62.5" x2="503.5" y1="147.6641" y2="147.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74.5" y="142.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="85.5" y="142.8076">shows the center of mass of each ships.</text><!--MD5=[b07ea01f26bba1d1bc30f5f12abfe618]
+@startuml
+'https://plantuml.com/sequence-diagram
+participant ShipCaptain as SC
+participant ":System" as S
+autonumber
+activate SC
+SC->S   : ask the system to determine the unladen center of mass for each vessel
+activate S
+S- ->S   : get the ships and calculate the center of mass by its formats.
+S- -> SC : shows the center of mass of each ships. 
+@enduml
+
+@startuml
+participant ShipCaptain as SC
+participant ":System" as S
+autonumber
+activate SC
+SC->S   : ask the system to determine the unladen center of mass for each vessel
+activate S
+S- ->S   : get the ships and calculate the center of mass by its formats.
+S- -> SC : shows the center of mass of each ships. 
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

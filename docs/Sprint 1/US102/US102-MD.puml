@@ -1,0 +1,39 @@
+@startuml
+
+class TrafficManager {
+  -String name
+  -String email
+}
+
+class Ship {
+    -Integer mmsi
+    -String vesselName
+    -Integer imo
+    -Integer callSign
+    -String type
+    -Double length
+    -Double width
+    -Double draft
+}
+
+class ShipDynamicData {
+  -String baseDateTime
+    -Double lat
+    -Double lon
+    -Double sog
+    -Double cog
+    -Double heading
+    -Integer trailerId
+    -String transcieverClass
+}
+
+class Company {
+  -String designation 
+}
+
+Company "1" -- "*" Ship : has registered >
+Company "1" -- "*" TrafficManager : has registered >
+TrafficManager "1" -- "1" Ship : controls the position of >
+Ship "*" -- "*" ShipDynamicData : has >
+
+@enduml

@@ -1,0 +1,125 @@
+@startuml
+
+autonumber
+
+activate TrafficManager
+
+TrafficManager -> ":MakeSummaryUI" : Starts the proccess of searching the ship details
+
+activate ":MakeSummaryUI"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : shipList=getShipsList()
+
+activate ":MakeSummaryController"
+
+":MakeSummaryController" -> ":ShipStore" : shipList=getAllShips()
+
+activate ":ShipStore"
+
+":ShipStore" -> ":Ship" : shipList=getShips()
+
+activate ":Ship"
+
+deactivate ":ShipStore"
+
+deactivate ":Ship"
+
+deactivate ":MakeSummaryController"
+
+":MakeSummaryUI" --> TrafficManager : requests necessary data
+
+deactivate ":MakeSummaryUI"
+
+TrafficManager -> ":MakeSummaryUI" : inserts the requested data
+
+activate ":MakeSummaryUI"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : searchShipByCode(code)
+
+activate ":MakeSummaryController"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : getShipByCode(code)
+
+":MakeSummaryController" -> ":ShipStore" : flag=searchShipByCode(code)
+
+activate ":ShipStore"
+
+":MakeSummaryController" -> ":ShipStore" : ship=getShipByCode(code)
+
+":ShipStore" -> ":Ship" : flag=searchShipByCode()
+
+activate ":Ship"
+
+":ShipStore" -> ":Ship" : ship=getShipByCode()
+
+deactivate ":ShipStore"
+
+deactivate ":Ship"
+
+deactivate ":MakeSummaryController"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : shipList=getShipsList()
+
+activate ":MakeSummaryController"
+
+":MakeSummaryController" -> ":Ship" : shipList=getAllShips()
+
+activate ":Ship"
+
+deactivate ":Ship"
+
+deactivate ":MakeSummaryController"
+
+":MakeSummaryUI" --> TrafficManager : requests necessary data
+
+deactivate ":MakeSummaryUI"
+
+TrafficManager -> ":MakeSummaryUI" : inserts the requested data
+
+activate ":MakeSummaryUI"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : getShipByCode(code)
+
+activate ":MakeSummaryController"
+
+":MakeSummaryController" -> ":Ship" : ship=getShipByCode(code)
+
+activate ":Ship"
+
+deactivate ":Ship"
+
+deactivate ":MakeSummaryController" 
+
+":MakeSummaryUI" --> TrafficManager : Displays the data requesting confirmation to make the summary
+
+deactivate ":MakeSummaryUI"
+
+TrafficManager -> ":MakeSummaryUI" : confirms
+
+activate ":MakeSummaryUI"
+
+":MakeSummaryUI" -> ":MakeSummaryController" : makeSummary(ship)
+
+activate ":MakeSummaryController" 
+
+":MakeSummaryController" -> ":ShipStore" : ship=createShip(code)
+
+activate ":ShipStore"
+
+":ShipStore" -> ":Ship" : ship=New Ship(code)
+
+deactivate ":ShipStore"
+
+activate ":Ship"
+
+deactivate ":Ship"
+
+deactivate ":MakeSummaryController" 
+
+":MakeSummaryUI" --> TrafficManager : informs the TrafficManager of the success of the operation
+
+deactivate ":MakeSummaryUI" 
+
+deactivate TrafficManager
+
+@enduml

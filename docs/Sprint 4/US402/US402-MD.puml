@@ -1,0 +1,39 @@
+@startuml
+
+class Company{
+    -String designation
+}
+
+class TrafficManager{
+    -String name
+    -String email
+}
+
+class Country{
+    -String continent
+    -String Alpha2-Code
+    -String Alpha3-Code
+    -String name
+    -double population
+    -String capital
+    -double latitude
+    -double longitude
+}
+
+class Port{
+     -String continent
+     -String country
+     -Integer code
+     -String port
+     -Double lat
+     -Double lon
+}
+
+
+Company "1" -- "*" TrafficManager : has registered >
+Company "1" -- "*" Port : has registered >
+Company "1" -- "*" Country : has registered >
+TrafficManager "*" -- "*" Port : which to know the shortest path from >
+TrafficManager "*" -- "*" Country : which to know the shortest path from >
+
+@enduml

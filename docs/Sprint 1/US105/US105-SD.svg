@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="424px" preserveAspectRatio="none" style="width:1332px;height:424px;background:#FFFFFF;" version="1.1" viewBox="0 0 1332 424" width="1332px" zoomAndPan="magnify"><defs><filter height="300%" id="f176ptprvb92uj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="318.8125" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="296.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="716" y="73.9609"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="60.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="920" y="104.3125"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="144.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="920" y="195.0156"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1207" y="134.6641"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1280" y="250.7188"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="122.0547" style="stroke:#000000;stroke-width:2.0;" width="512.5" x="805.5" y="210.0156"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="41.6094" y2="379.4219"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="720.5" x2="720.5" y1="41.6094" y2="379.4219"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="924.5" x2="924.5" y1="41.6094" y2="379.4219"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1212" x2="1212" y1="41.6094" y2="379.4219"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1285" x2="1285" y1="41.6094" y2="379.4219"/><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="26.5332">TrafficManager</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="110" x="5" y="378.4219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="12" y="399.9551">TrafficManager</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="165" x="636.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="643.5" y="26.5332">SeeMMSIAndMoreInfoUI</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="165" x="636.5" y="378.4219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="643.5" y="399.9551">SeeMMSIAndMoreInfoUI</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="215" x="815.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="822.5" y="26.5332">SeeMMSIAndMoreInfoController</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="215" x="815.5" y="378.4219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="822.5" y="399.9551">SeeMMSIAndMoreInfoController</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="76" x="1172" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="1179" y="26.5332">ShipStore</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="76" x="1172" y="378.4219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="1179" y="399.9551">ShipStore</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="42" x="1262" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="1269" y="26.5332">Ship</text><rect fill="#FEFECE" filter="url(#f176ptprvb92uj)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="42" x="1262" y="378.4219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="1269" y="399.9551">Ship</text><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="318.8125" style="stroke:#A80036;stroke-width:1.0;" width="10" x="57" y="51.6094"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="296.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="716" y="73.9609"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="60.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="920" y="104.3125"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="144.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="920" y="195.0156"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1207" y="134.6641"/><rect fill="#FFFFFF" filter="url(#f176ptprvb92uj)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1280" y="250.7188"/><polygon fill="#A80036" points="704,69.9609,714,73.9609,704,77.9609,708,73.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="67" x2="710" y1="73.9609" y2="73.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="74" y="69.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="619" x="85" y="69.1045">ask the system the MMSI the total number of movements, Travelled Distance and Delta Distance organized</text><polygon fill="#A80036" points="908,100.3125,918,104.3125,908,108.3125,912,104.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="726" x2="914" y1="104.3125" y2="104.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="733" y="99.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="744" y="99.4561">listShip=getShipList()</text><polygon fill="#A80036" points="1195,130.6641,1205,134.6641,1195,138.6641,1199,134.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="930" x2="1201" y1="134.6641" y2="134.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="937" y="129.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="948" y="129.8076">listShip=getAllShips()</text><polygon fill="#A80036" points="908,191.0156,918,195.0156,908,199.0156,912,195.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="726" x2="914" y1="195.0156" y2="195.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="733" y="190.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="744" y="190.1592">printTheInfos(listShip)</text><path d="M805.5,210.0156 L878.5,210.0156 L878.5,218.0156 L868.5,228.0156 L805.5,228.0156 L805.5,210.0156 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="122.0547" style="stroke:#000000;stroke-width:2.0;" width="512.5" x="805.5" y="210.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="28" x="820.5" y="224.5107">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="118" x="893.5" y="223.4346">[listShip.size() times]</text><polygon fill="#A80036" points="1268,246.7188,1278,250.7188,1268,254.7188,1272,250.7188" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="930" x2="1274" y1="250.7188" y2="250.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="937" y="245.8623">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="274" x="948" y="245.8623">listDynamicShipData=getAllDynamicShipData()</text><line style="stroke:#A80036;stroke-width:1.0;" x1="930" x2="972" y1="311.0703" y2="311.0703"/><line style="stroke:#A80036;stroke-width:1.0;" x1="972" x2="972" y1="311.0703" y2="324.0703"/><line style="stroke:#A80036;stroke-width:1.0;" x1="931" x2="972" y1="324.0703" y2="324.0703"/><polygon fill="#A80036" points="941,320.0703,931,324.0703,941,328.0703,937,324.0703" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="937" y="306.2139">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="948" y="306.2139">getTheInfosAndPrintIt(listDynamicShipData)</text><polygon fill="#A80036" points="78,357.4219,68,361.4219,78,365.4219,74,361.4219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="72" x2="715" y1="361.4219" y2="361.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="84" y="356.5654">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="244" x="95" y="356.5654">show to the Traffic Manager the info asked</text><!--MD5=[1c3edb70c09dc06d7892b0a8cd156824]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant TrafficManager as TM
+participant SeeMMSIAndMoreInfoUI as SMAMIUI
+participant SeeMMSIAndMoreInfoController as SMAMIC
+participant ShipStore as SS
+participant Ship as S
+
+activate TM
+
+TM -> SMAMIUI : ask the system the MMSI the total number of movements, Travelled Distance and Delta Distance organized
+
+activate SMAMIUI
+SMAMIUI -> SMAMIC : listShip=getShipList()
+activate SMAMIC
+SMAMIC -> SS : listShip=getAllShips()
+activate SS
+deactivate SS
+
+deactivate SMAMIC
+SMAMIUI -> SMAMIC : printTheInfos(listShip)
+activate SMAMIC
+    loop listShip.size() times
+        SMAMIC -> S : listDynamicShipData=getAllDynamicShipData()
+        activate S
+        deactivate S
+        SMAMIC-> SMAMIC  : getTheInfosAndPrintIt(listDynamicShipData)
+    end
+deactivate SMAMIC
+SMAMIUI - -> TM : show to the Traffic Manager the info asked
+@enduml
+
+@startuml
+
+autonumber
+participant TrafficManager as TM
+participant SeeMMSIAndMoreInfoUI as SMAMIUI
+participant SeeMMSIAndMoreInfoController as SMAMIC
+participant ShipStore as SS
+participant Ship as S
+
+activate TM
+
+TM -> SMAMIUI : ask the system the MMSI the total number of movements, Travelled Distance and Delta Distance organized
+
+activate SMAMIUI
+SMAMIUI -> SMAMIC : listShip=getShipList()
+activate SMAMIC
+SMAMIC -> SS : listShip=getAllShips()
+activate SS
+deactivate SS
+
+deactivate SMAMIC
+SMAMIUI -> SMAMIC : printTheInfos(listShip)
+activate SMAMIC
+    loop listShip.size() times
+        SMAMIC -> S : listDynamicShipData=getAllDynamicShipData()
+        activate S
+        deactivate S
+        SMAMIC-> SMAMIC  : getTheInfosAndPrintIt(listDynamicShipData)
+    end
+deactivate SMAMIC
+SMAMIUI - -> TM : show to the Traffic Manager the info asked
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 14:26:11 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>
